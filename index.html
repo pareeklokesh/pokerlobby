@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Poker</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/Fontawsome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="header container-fluid">
+	<div class="row align-items-center justify-content-between flex-nowrap">
+		<div class="w-auto">
+			<div class="d-flex align-items-center">
+				<button class="btn backbtn me-3"><i class="fa-solid fa-arrow-left"></i></button>
+				<div class="profileDetails d-flex align-items-center">
+					<img class="profileUser rounded-pill position-relative" src="assets/img/user-thumbnail.jpg" />
+					<p class="m-0"><label>Shiveesinghle</label><span>₹ 7887.24 <img src="assets/img/wallet.png" width="24" /></span></p>
+				</div>
+			</div>
+		</div>
+		<div class="w-auto">
+			<a href="#" class="logo">
+				<img src="assets/img/logo.png" />
+			</a>
+		</div>
+		<div class="w-auto text-end d-none d-sm-block" style="min-width: 280px;">
+			<button class="btn userslash-btn position-relative">
+			<i class="fa-solid fa-users-slash"></i>
+			<span class="privateBtn">Private</span>
+			</button>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid texasholdem-tabs p-0">
+		<div class="col-12">
+			<ul class="nav nav-tabs position-relative" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Texas Holdem</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Pot Limit Omaha</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab" aria-controls="contact" aria-selected="false">High - Low</button>
+  </li>
+  <li class="nav-item border-0" role="presentation">
+    <button class="nav-link" id="tournaments-tab" data-bs-toggle="tab" data-bs-target="#tournaments" type="button" role="tab" aria-controls="tournaments" aria-selected="false">Tournaments</button>
+  </li>
+  <li class="nav-item tableFilter d-flex align-items-center position-absolute end-0" role="presentation">
+    <button><i class="fa-solid fa-filter"></i></button>
+    <button><img src="assets/img/up-and-down-arrow.png" /></button>
+    <button><i class="fa-solid fa-arrows-rotate"></i></button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+  	<table class="table w-100 texasholdemTable">
+  		<thead>
+  			<tr>
+  				<th class="dnone-deskdata">0 Table</th>
+  				<th>Name</th>
+  				<th>Blinds</th>
+  				<th>Buy - in</th>
+  				<th class="table-data-none">Average Stack</th>
+  				<th class="table-data-none">Active Players</th>
+  				<th>Players</th>
+  				<th>Action</th>
+  			</tr>
+  		</thead>
+  		<tbody>
+  			<tr>
+          <td class="dnone-deskdata" data-label="0 Table"><span class="nlh-bg">NLH</span></td>
+          <td class="databefore-none usernamrtable" data-label="Name"><span>rackback</span></td>
+          <td data-label="Blinds">1/2</td>
+          <td data-label="Buy - in">40/200</td>
+          <td class="table-data-none" data-label="Average Stack">(25)</td>
+          <td class="table-data-none" data-label="Active Players">0 <i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i> 0</td>
+          <td data-label="Players">(0/5)</td>
+          <td class="databefore-none" data-label="Action"><button class="playnow-btn">Play <i class="fa-solid fa-play"></i></button></td>
+        </tr>
+        <tr>
+          <td class="dnone-deskdata" data-label="0 Table"><span class="nlh-bg">NLH</span></td>
+          <td class="databefore-none usernamrtable" data-label="Name"><span>rackback</span></td>
+          <td data-label="Blinds">1/2</td>
+          <td data-label="Buy - in">40/200</td>
+          <td class="table-data-none" data-label="Average Stack">(25)</td>
+          <td class="table-data-none" data-label="Active Players">0 <i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i> 0</td>
+          <td data-label="Players">(0/5)</td>
+          <td class="databefore-none" data-label="Action"><button class="playnow-btn">Play <i class="fa-solid fa-play"></i></button></td>
+        </tr>
+        <tr>
+          <td class="dnone-deskdata" data-label="0 Table"><span class="nlh-bg">NLH</span></td>
+          <td class="databefore-none usernamrtable" data-label="Name"><span>rackback</span></td>
+          <td data-label="Blinds">1/2</td>
+          <td data-label="Buy - in">40/200</td>
+          <td class="table-data-none" data-label="Average Stack">(25)</td>
+          <td class="table-data-none" data-label="Active Players">0 <i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i> 0</td>
+          <td data-label="Players">(0/5)</td>
+          <td class="databefore-none" data-label="Action"><button class="playnow-btn">Play <i class="fa-solid fa-play"></i></button></td>
+        </tr>
+        <tr>
+          <td class="dnone-deskdata" data-label="0 Table"><span class="nlh-bg">NLH</span></td>
+          <td class="databefore-none usernamrtable" data-label="Name"><span>rackback</span></td>
+          <td data-label="Blinds">1/2</td>
+          <td data-label="Buy - in">40/200</td>
+          <td class="table-data-none" data-label="Average Stack">(25)</td>
+          <td class="table-data-none" data-label="Active Players">0 <i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i> 0</td>
+          <td data-label="Players">(0/5)</td>
+          <td class="databefore-none" data-label="Action"><button class="playnow-btn">Play <i class="fa-solid fa-play"></i></button></td>
+        </tr>
+        <tr>
+          <td class="dnone-deskdata" data-label="0 Table"><span class="nlh-bg">NLH</span></td>
+          <td class="databefore-none usernamrtable" data-label="Name"><span>rackback</span></td>
+          <td data-label="Blinds">1/2</td>
+          <td data-label="Buy - in">40/200</td>
+          <td class="table-data-none" data-label="Average Stack">(25)</td>
+          <td class="table-data-none" data-label="Active Players">0 <i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i> 0</td>
+          <td data-label="Players">(0/5)</td>
+          <td class="databefore-none" data-label="Action"><button class="playnow-btn">Play <i class="fa-solid fa-play"></i></button></td>
+        </tr>
+        <tr>
+          <td class="dnone-deskdata" data-label="0 Table"><span class="nlh-bg">NLH</span></td>
+          <td class="databefore-none usernamrtable" data-label="Name"><span>rackback</span></td>
+          <td data-label="Blinds">1/2</td>
+          <td data-label="Buy - in">40/200</td>
+          <td class="table-data-none" data-label="Average Stack">(25)</td>
+          <td class="table-data-none" data-label="Active Players">0 <i class="fa-solid fa-user"></i> <i class="fa-solid fa-user"></i> 0</td>
+          <td data-label="Players">(0/5)</td>
+          <td class="databefore-none" data-label="Action"><button class="playnow-btn">Play <i class="fa-solid fa-play"></i></button></td>
+        </tr>
+  		</tbody>
+  	</table>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
+  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+  <div class="tab-pane fade" id="tournaments" role="tabpanel" aria-labelledby="tournaments-tab">...</div>
+</div>
+
+		</div>
+</div>
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,340 @@
+:root {
+	--maincolor:#4bb84d;
+}
+* {
+	font-family: 'Poppins', sans-serif;
+  color: #fff;
+}
+body {
+	background: #0a0a0a !important;
+  color: #fff;
+}
+.backbtn i {
+  color: #4bb84d;
+  font-size: 20px;
+}
+.backbtn {
+  border: 3px solid #4bb84d;
+  padding: 5px 8px;
+  color: #fff;
+  position: relative;
+}
+.backbtn::before {
+  content: "";
+  display: block;
+  width: 13px;
+  height: 10px;
+  position: absolute;
+  background: #0a0a0a;
+  top: 39%;
+  right: -7px;
+}
+.profileUser {
+  width: 75px;
+  height: 75px;
+  border: 2px solid var(--maincolor);
+}
+.profileDetails p {
+  background: #252525;
+  color: #fff;
+  border: 2px solid var(--maincolor);
+  border-radius: 6px;
+  margin-left: -25px !important;
+}
+.profileDetails p span {
+  display: block;
+  background: #fff;
+  color: #0a0a0a;
+  border-radius: 0 0 4px 0;
+}
+.profileDetails p label, .profileDetails p span {
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 2px;
+padding-bottom: 2px;
+}
+.userslash-btn {
+  border: 2px solid var(--maincolor) !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: var(--maincolor) !important;
+  padding: 0;
+}
+.userslash-btn i {color: var(--maincolor);}
+.userslash-btn i {
+  font-size: 26px;
+}
+.privateBtn {
+  background: #fff;
+  color: #000;
+  font-weight: 400;
+  position: absolute;
+  left: -16px;
+  bottom: -14px;
+  padding: 1px 15px;
+  border: 2px solid var(--maincolor);
+  border-radius: 25px;
+  font-size: 12px;
+}
+.header {
+  padding: 8px 25px;
+}
+.texasholdem-tabs {
+	border-top: 2px solid var(--maincolor);
+}
+.texasholdemTable thead {
+  background: linear-gradient(to bottom, #202020, #141414);
+}
+.texasholdem-tabs .nav-tabs li button {
+  border-bottom: 2px solid transparent !important;
+}
+.texasholdem-tabs .nav-tabs li button, .texasholdem-tabs .nav-tabs li button.active  {
+	color: #f4ba01;
+  background:transparent !important;
+  border: 0;
+}
+.texasholdem-tabs .nav-tabs li button.active  {
+  border-bottom: 2px solid var(--maincolor) !important; 
+}
+.texasholdem-tabs .nav-tabs li button {
+  font-size: 18px;
+  font-weight: 600;
+  border: 0px !important;
+  border-right: 1px solid #232423 !important;
+  border-radius: 0;
+}
+.texasholdem-tabs .nav-tabs li:last-child button {
+  border-right: 0 !important;
+}
+.texasholdem-tabs .nav-tabs {
+  border: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #202020, #141414);
+}
+.texasholdemTable thead tr th {
+  color: #f4ba01;
+  font-weight: 400;
+}
+.texasholdemTable tbody tr td {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  vertical-align: middle;
+}
+.texasholdemTable tbody tr td i {
+  background: var(--maincolor);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 6px;
+}
+.playnow-btn {
+  background: linear-gradient(to bottom, #f0bc00, #4c3d09);
+  border: 0;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  min-width: 100px;
+  text-align: center;
+  position: relative;
+}
+.playnow-btn i {
+  position: absolute;
+  right: 8px;
+  background: #fff !important;
+  color: #8d6c04 !important;
+  top: 4px;
+}
+.texasholdemTable {
+  border-color: var(--maincolor);
+}
+.texasholdemTable thead tr, .texasholdemTable thead tr th {
+  border: 0;
+}
+.tableFilter i {
+  color: var(--maincolor);
+}
+.texasholdem-tabs .nav-tabs li.tableFilter button {
+  border-right: 1px solid #232423 !important;
+  padding: 9px 10px;
+}
+.texasholdemTable tbody tr td, .texasholdemTable thead tr th {
+  text-align: center;
+}
+
+
+@media (min-width: 768px) {
+  .dnone-deskdata {
+  display: none;
+}
+.header {
+  padding-left: 15px;
+}
+.playnow-btn {
+  padding-right: 38px;
+}
+
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .texasholdem-tabs .nav-tabs li button, .texasholdemTable thead tr th, .texasholdemTable tbody tr td {
+  font-size: 12px;
+}
+.texasholdem-tabs .nav-tabs li.tableFilter button img {
+  width: 18px;
+}
+.texasholdemTable tbody tr td .playnow-btn i {
+  width: inherit;
+  height: inherit;
+  font-size: 12px;
+  background: transparent !important;
+  color: #fff !important;
+  position: static;
+  padding: 0;
+}
+.playnow-btn {
+  min-width: inherit;
+  font-size: 12px;
+}
+
+}
+
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .flex-nowrap .w-auto {
+  min-width: inherit !important;
+}
+.logo img {
+  width: 130px;
+}
+.profileDetails p, .backbtn i {
+  font-size: 12px;
+}
+.profileDetails p label, .profileDetails p span {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.profileUser {
+  width: 50px;
+  height: 50px;
+}
+.backbtn {
+  padding: 0 4px;
+}
+.header {
+  padding: 8px;
+}
+.texasholdemTable tbody tr td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+  color: var(--maincolor);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+.texasholdemTable thead {
+  display: none;
+}
+.table-data-none {
+  display: none;
+}
+.texasholdemTable tbody tr td {
+  border: 1px solid #9e8f72;
+}
+.texasholdemTable tbody tr td .nlh-bg {
+  background: #756a1a;
+  font-size: 18px;
+  padding: 5px 18px;
+  border-radius: 6px;
+}
+.databefore-none::before {
+  display: none;
+}
+.texasholdemTable tbody tr td.usernamrtable {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+}
+.usernamrtable span {
+  font-size: 16px;
+  position: absolute;
+  top: -13px;
+  color: #554993;
+  font-weight: 500;
+  background: #0a0a0a;
+  padding: 0 10px;
+  z-index: 1;
+  left: 25px;
+}
+.texasholdemTable tbody tr td {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  border-right: 0;
+  border-left: 0;
+  text-align: center;
+}
+.texasholdemTable tbody tr {
+margin-top: 15px;}
+.texasholdemTable {
+  border-collapse: separate;
+  border-spacing: 0 2em;
+}
+.texasholdemTable tbody tr td:first-child {
+  border-right: 2px dashed #9e8f72;
+  border-radius: 6px;
+  border-left: 1px solid #9e8f72;
+}
+.texasholdemTable tbody tr td.usernamrtable + td {
+  border-radius: 6px 0px 0 6px;
+}
+.playnow-btn i {
+  display: none;
+}
+.playnow-btn {
+  background: linear-gradient(to bottom, #c41824, #4c0e13);
+  border-radius: 0;
+  min-width: inherit;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+.texasholdemTable tbody tr td:last-child {
+  padding-bottom: 0;
+  border-right: 1px solid #9e8f72;
+  border-radius: 0 6px 6px 0;
+}
+.texasholdemTable {
+  padding: 0 15px;
+}
+.tableFilter {
+  display: none !important;
+}
+.header {
+  padding-bottom: 18px;
+  padding-right: 20px;
+}
+
+}
+@media (max-width: 420px) and (orientation: portrait) {
+  .texasholdemTable tbody tr td::before, .texasholdemTable tbody tr td .nlh-bg, .texasholdemTable tbody tr td {
+    font-size: 12px;
+  }
+  .playnow-btn {
+  font-size: 12px;
+  padding: 6px 8px;
+}
+.header {
+  padding-bottom: 8px;padding-right: 8px;
+}
+
+}
