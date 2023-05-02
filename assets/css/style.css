@@ -14,20 +14,8 @@ body {
   font-size: 20px;
 }
 .backbtn {
-  border: 3px solid #4bb84d;
-  padding: 5px 8px;
-  color: #fff;
+  padding: 0;
   position: relative;
-}
-.backbtn::before {
-  content: "";
-  display: block;
-  width: 13px;
-  height: 10px;
-  position: absolute;
-  background: #0a0a0a;
-  top: 39%;
-  right: -7px;
 }
 .profileUser {
   width: 75px;
@@ -164,6 +152,10 @@ padding-bottom: 2px;
 .texasholdemTable tbody tr td, .texasholdemTable thead tr th {
   text-align: center;
 }
+.setting-btn {
+  display: none;
+}
+.portrait-tab-text {display: none;}
 
 
 @media (min-width: 768px) {
@@ -208,6 +200,9 @@ padding-bottom: 2px;
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
+  .setting-btn, .portrait-tab-text {
+    display: inherit;
+  }
   .flex-nowrap .w-auto {
   min-width: inherit !important;
 }
@@ -328,6 +323,53 @@ margin-top: 15px;}
   padding-bottom: 18px;
   padding-right: 20px;
 }
+.userslash-btn {
+  border: 0 !important;
+  width: auto;
+  height: auto;
+}
+.userslash-btn i {
+  font-size: 21px;
+  color: #fff;
+}
+.privateBtn {
+  padding: 0 8px;
+  border: 0;
+  text-transform: uppercase;
+  bottom: -17px;
+  border-radius: 0 0 6px 6px;
+  left: -13px;font-size: 10px;
+}
+.setting-btn {
+  margin-left: 15px;
+}
+.tablenumber-des {
+  display: none;
+}
+.texasholdem-tabs .nav-tabs li button {
+  font-size: 0;
+}
+.texasholdem-tabs .nav-tabs li button {
+  border: 1.9px solid #504581 !important;
+  margin-right: 8px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  min-width: 76px;
+}
+.portrait-tab-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+.texasholdem-tabs .nav-tabs li button.active {
+  border: 1px solid #9e8f72 !important;
+}
+.texasholdem-tabs .nav-tabs {
+  padding: 0 15px;
+}
+.texasholdem-tabs .nav-tabs li:nth-child(4) button {
+  margin-right: 0;
+}
 
 }
 @media (max-width: 420px) and (orientation: portrait) {
@@ -340,6 +382,16 @@ margin-top: 15px;}
 }
 .header {
   padding-bottom: 8px;padding-right: 8px;
+}
+.logo img {
+  width: 100px;
+}
+.backbtn {
+  margin-right: 8px !important;
+}
+.profileDetails p label, .profileDetails p span {
+  padding-right: 3px;
+  padding-left: 27px;
 }
 
 }
