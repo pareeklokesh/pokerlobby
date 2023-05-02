@@ -4,10 +4,13 @@
 * {
 	font-family: 'Poppins', sans-serif;
   color: #fff;
+  box-sizing: border-box;
 }
 body {
 	background: #0a0a0a !important;
   color: #fff;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 .backbtn i {
   color: #4bb84d;
@@ -219,6 +222,7 @@ padding-bottom: 2px;
 .profileUser {
   width: 50px;
   height: 50px;
+  border-color: #504581;
 }
 .backbtn {
   padding: 0 4px;
@@ -362,13 +366,16 @@ margin-top: 15px;}
   font-weight: 700;
 }
 .texasholdem-tabs .nav-tabs li button.active {
-  border: 1px solid #9e8f72 !important;
+  border: 1.9px solid #9e8f72 !important;
 }
 .texasholdem-tabs .nav-tabs {
   padding: 0 15px;
 }
 .texasholdem-tabs .nav-tabs li:nth-child(4) button {
   margin-right: 0;
+}
+.profileDetails p {
+  border: 2px solid #504581;
 }
 
 }
@@ -387,11 +394,14 @@ margin-top: 15px;}
   width: 100px;
 }
 .backbtn {
-  margin-right: 8px !important;
+  margin-right: 0px !important;
 }
 .profileDetails p label, .profileDetails p span {
   padding-right: 3px;
   padding-left: 27px;
+}
+.logodiv {
+  margin-left: -15px;
 }
 
 }
