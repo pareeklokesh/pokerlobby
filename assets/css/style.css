@@ -159,6 +159,9 @@ padding-bottom: 2px;
   display: none;
 }
 .portrait-tab-text {display: none;}
+.tablenumber-des p span {
+  padding-right: 30px;
+}
 
 
 @media (min-width: 768px) {
@@ -192,6 +195,9 @@ padding-bottom: 2px;
 .playnow-btn {
   min-width: inherit;
   font-size: 12px;
+}
+.tablenumber-des p span {
+  padding-right: 10px;
 }
 
 }
