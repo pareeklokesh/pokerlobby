@@ -201,6 +201,11 @@ padding-bottom: 2px;
 
 }
 
+@media (max-width: 991px) {
+.flex-nowrap .w-auto {
+  min-width: inherit !important;
+}
+}
 
 @media (max-width: 767px) and (orientation: portrait) {
   .flex-nowrap .w-auto {
