@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Poker Table</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/Fontawsome/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-x-hidden">
+<div class="pokertable-header container-fluid py-3">
+	<div class="row justify-content-between">
+		<div class="w-auto">
+			<div class="position-relative">
+			<button class="btn pokertable-topbtn pokertable-menu"><img src="assets/img/list.png" /></button>
+			<div class="pokertablemenu-des pokertablemenumain-des position-absolute top-0">
+				<button class="btn text-uppercase"><img src="assets/img/list.png" />Menu</button>
+				<ul class="pokerMenu-list">
+					<li class="d-block">
+						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-forward-step"></i> Resume</a>
+					</li>
+					<li class="d-block">
+						<a href="#" class="text-uppercase pokernav-item"><img src="assets/img/cash.png" width="24" />Top up</a>
+					</li>
+					<li class="d-block">
+						<a href="#" class="text-uppercase pokernav-item"><img src="assets/img/switch.png" /> Switch Table</a>
+					</li>
+					<li class="d-block">
+						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Stand up</a>
+					</li>
+					<li class="d-block">
+						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Sit out</a>
+					</li>
+					<li class="d-block">
+						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-question"></i> How to play</a>
+					</li>
+					<li class="d-block">
+						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-right-from-bracket"></i> Exit</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+		<div class="w-auto">
+			<div class="position-relative">
+			<button class="btn pokertable-topbtn"><img src="assets/img/trophy.png" /></button>
+			<button class="btn pokertable-topbtn"><img src="assets/img/cardshd.png" width="32" /></button>
+			<button class="btn pokertable-topbtn settingspopup"><img src="assets/img/settings.png" /></button>
+			<div class="pokertablemenu-des settingpopup position-absolute top-0">
+				<button class="btn text-uppercase position-relative">Settings <i class="fa-solid fa-xmark"></i></button>
+				<ul class="pokerMenu-list">
+					<li class="d-block pokernav-item text-uppercase switchToggle">
+						Sound <input type="checkbox" id="switch" class="" name="">
+				    <label for="switch" class="value_add"></label>
+					</li>
+					<li class="d-block pokernav-item text-uppercase switchToggle">
+						Mute Chat <input type="checkbox" id="muteChat" class="" name="">
+				    <label for="muteChat" class="value_add"></label>
+					</li>
+					<li class="d-block pokernav-item text-uppercase switchToggle">
+						Auto Muck <input type="checkbox" id="autoMuck" class="" name="">
+				    <label for="autoMuck" class="value_add"></label>
+					</li>
+					<li class="d-block pokernav-item text-uppercase switchToggle">
+						Run It Twice <input type="checkbox" id="runitTwice" class="" name="">
+				    <label for="runitTwice" class="value_add"></label>
+					</li>
+					<li class="d-block pokernav-item text-uppercase">
+						Table Info <img src="assets/img/tableinfo.png" class="m-0 float-end" style="vertical-align: middle;" />
+					</li>
+				</ul>
+			</div>
+		</div>
+		</div>
+</div>
+</div>
+
+<div class="container-fluid">
+	<div class="container pokertable-container">
+		<div class="pokertablegame w-100 position-relative">
+			<div class="poker-user text-center position-absolute d-flex justify-content-center">
+				<div class="w-auto">
+				<img src="assets/img/user.png" />
+				<p class="text-uppercase">Empty</p>
+			</div>
+			</div>
+			<div class="poker-user poker-user-1 text-center position-absolute d-flex justify-content-center">
+				<div class="w-auto">
+				<img src="assets/img/user.png" />
+				<p class="text-uppercase">Empty</p>
+			</div>
+			</div>
+
+			<div class="poker-user poker-user-2 text-center position-absolute d-flex justify-content-center">
+				<div class="w-auto">
+				<img src="assets/img/user.png" />
+				<p class="text-uppercase">Empty</p>
+			</div>
+			</div>
+
+			<div class="poker-user poker-user-3 poker-user-active text-center position-absolute d-flex justify-content-center align-items-end">
+				<div class="w-auto">
+				<img src="assets/img/user.png" />
+				<p class="text-uppercase">Empty...<span class="d-block usertablepoint">36</span></p>
+			</div>
+			<div class="w-auto usercardsDiv ms-1">
+				<div class="w-100 overflow-hidden usercards d-flex position-relative">
+					<img src="assets/img/backcards.png" class="m-0">
+					<img src="assets/img/backcards.png">
+					<span class="position-absolute start-0 userpointrgba" style="top: 28px;">SB</span>
+				</div>
+			</div>
+			</div>
+
+			<div class="poker-user poker-user-4 poker-user-active text-center position-absolute d-flex justify-content-center align-items-end">
+				<div class="w-auto">
+				<img src="assets/img/user.png" />
+				<p class="text-uppercase">Empty...</p>
+			</div>
+			<div class="w-auto usercardsDiv ms-1">
+				<div class="w-100 overflow-hidden usercards d-flex position-relative">
+					<img src="assets/img/cards.png" class="m-0">
+					<img src="assets/img/cards1.png">
+					<span class="position-absolute bottom-0 start-0">BB</span>
+				</div>
+				<p class="mb-0">36</p>
+			</div>
+			</div>
+
+			<div class="chips-point position-absolute">
+				<p class="mb-0 d-flex justify-content-center align-items-center"><img src="assets/img/chips.png" width="18" />2</p>
+			</div>
+			<div class="chips-point chips-point-1 position-absolute">
+				<p class="mb-0 d-flex justify-content-center align-items-center"><img src="assets/img/chips.png" width="18" />1</p>
+			</div>
+
+			<div class="position-absolute pokeruserid text-center">
+				# 100400029248
+			</div>
+
+			<div class="w-100 position-relative poker-table-body">
+			<div class="pot-point w-100 text-center">
+				<div class="w-auto">
+				<strong class="d-block text-center">Pot : 3.00</strong>
+				<div class="position-relative">
+					<p class="position-relative mb-0"><img src="assets/img/pot.png" />0.00</p>
+				</div>
+			</div>
+			</div>
+			<div class="texasholdem-text w-100 text-center">
+				Texas HoldEm - no limit-rackback -1/2
+			</div>
+
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid mb-5 mt-5 pt-3 d-none">
+	<div class="w-100 d-flex justify-content-center fold-btndiv">
+		<div class="fold-btn position-relative">
+			<input type="checkbox" id="fold" name="" class="position-absolute invisible">
+			<label for="fold" class="text-uppercase">fold</label>
+		</div>
+		<div class="fold-btn position-relative">
+			<input type="checkbox" id="checkfold" name="" class="position-absolute invisible">
+			<label for="checkfold" class="text-uppercase">check/fold</label>
+		</div>
+		<div class="fold-btn position-relative">
+			<input type="checkbox" id="check" name="" class="position-absolute invisible">
+			<label for="check" class="text-uppercase">check</label>
+		</div>
+		<div class="fold-btn position-relative">
+			<input type="checkbox" id="call" name="" class="position-absolute invisible">
+			<label for="call" class="text-uppercase">call</label>
+		</div>
+		<div class="fold-btn position-relative">
+			<input type="checkbox" id="callany" name="" class="position-absolute invisible">
+			<label for="callany" class="text-uppercase">call any</label>
+		</div>
+	</div>
+</div>
+
+<div class="container-fluid mb-5 mt-5 pt-3">
+	<div class="row">
+		<div class="col-6 col-md-7">
+			<div class="w-100 d-flex">
+			<button class="btn text-uppercase callraise-btn">Fold</button>
+			<button class="btn text-uppercase callraise-btn" style="background: linear-gradient(#18ce27, #158a1f,#1fcd2d);" data-bs-toggle="modal" data-bs-target="#exampleModal">Call <span class="d-block">1</span></button>
+			<button class="btn text-uppercase callraise-btn m-0" style="background: linear-gradient(#1854ce, #173d88,#1854ce);">Raise <span class="d-block">3</span></button>
+		</div>
+		</div>
+		<div class="col-6 col-md-5">
+			<div class="w-100 d-flex align-items-center">
+				<button class="btn text-capitalize potmax-btn">1/2</button>
+				<button class="btn text-capitalize potmax-btn">3/4</button>
+				<button class="btn text-capitalize potmax-btn">pot</button>
+				<button class="btn text-capitalize potmax-btn m-0">max</button>
+			</div>
+			<div class="w-100 d-flex mt-3 align-items-center">
+				<div class="progreshnumber me-1">3</div>
+				<div class="d-flex align-items-center" style="width: 80%;">
+					<div>
+					<button class="btn plush-btn">-</button>
+				</div>
+					<div class="progreshbar-poker position-relative">
+						<img src="assets/img/arrow.png" class="position-absolute progresh-arrow" />
+					</div>
+					<div>
+					<button class="btn plush-btn plushBtn">+</button>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="chat">
+	<button class="chat-btn">
+		<img src="assets/img/chat.png" />
+	</button>
+
+	<div class="chatbox position-absolute">
+		
+			<ul class="nav nav-tabs position-relative chat-tabs border-0" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="Chat-tab" data-bs-toggle="tab" data-bs-target="#Chat" type="button" role="tab" aria-controls="Chat" aria-selected="true">Chat</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="Note-tab" data-bs-toggle="tab" data-bs-target="#Note" type="button" role="tab" aria-controls="Note" aria-selected="false">Note</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="Stats-tab" data-bs-toggle="tab" data-bs-target="#Stats" type="button" role="tab" aria-controls="Stats" aria-selected="false">Stats</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="Chat" role="tabpanel" aria-labelledby="Chat-tab">
+  	<div class="position-relative" style="min-height: 140px;">
+  		<div class="d-flex chatnow-btn position-absolute bottom-0">
+  			<input type="text" name=""><button class="text-uppercase">Send</button>
+  		</div>
+  	</div>
+  </div>
+  <div class="tab-pane fade" id="Note" role="tabpanel" aria-labelledby="Note-tab">...</div>
+  <div class="tab-pane fade" id="Stats" role="tabpanel" aria-labelledby="Stats-tab">
+  	<p>user_p008 : Blind : 2</p>
+  	<p>shiveesinghal : SmallBlind : 1</p>
+  	<p>shiveesinghal : Fold : 0</p>
+  	<p class="mb-0">shiveesinghal : Won By : EVERYONE</p>
+  </div>
+</div>
+
+		
+	</div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade buyin-modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h5 class="modal-title text-center d-block w-100" id="exampleModalLabel">Buy - In</h5>
+      </div>
+      <div class="modal-body">
+        <h6 class="d-block text-center">Wallet Balance: 4962.66</h6>
+        <div class="modal-progres progress w-100">
+        	  <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="200"></div>
+        </div>
+        <div class="w-100 d-flex justify-content-between mb-2 py-2 px-3">
+        	<p class="mb-0">Min : 40</p>
+        	<p class="mb-0">Max : 200</p>
+        </div>
+
+        <div class="w-100">
+        	<p class="mb-0 d-flex justify-content-center align-items-center">Add <input class="modalvalueadd" type="text" value="40" name=""></p>
+        	<div class="d-flex justify-content-center mt-4">
+        		<input type="checkbox" id="enablebuy" name="" class="me-2">
+        		<label for="enablebuy">Enable auto buy-in</label>
+        	</div>
+        </div>
+        <div class="d-flex justify-content-center align-items-center mt-4">
+        	<button class="btn text-capitalize modalon-btn">Ok</button>
+        	<p class="d-block text-center mb-0 modaltimer"><i class="fa-solid fa-clock"></i><span class="d-block text-center">7</span></p>
+        	<button class="btn text-capitalize modalon-btn" data-bs-dismiss="modal" style="background: linear-gradient(#bc2839, #6a3035);">Cancel</button>
+        </div>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+<script>
+    $(function() {
+  $(".pokertable-menu").on("click", function(e) {
+    $(".pokertablemenumain-des").toggleClass("pokertablemenu-des-open");
+    e.stopPropagation()
+  });
+  $(document).on("click", function(e) {
+    if ($(e.target).is(".side_bar") === false) {
+      $(".pokertablemenumain-des").removeClass("pokertablemenu-des-open");
+    }
+  });
+});
+
+$(".settingspopup").click(function(){
+	$(".settingpopup").toggleClass("settingpopup-open");
+});
+$(".settingpopup button i").click(function(){
+	$(".settingpopup").removeClass("settingpopup-open");
+});
+
+</script>
+
+<script>
+	$(".chat-btn").click(function(){
+		$(".chatbox").toggleClass("chatbox-open");
+	});
+</script>
+
+
+</body>
+</html>
