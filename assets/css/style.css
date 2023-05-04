@@ -1377,6 +1377,116 @@ font-size: 30px;
   width: 50px;
   margin-left: -25px;
 }
+.portrait-rang {
+  width: 100px;
+  border: 5px solid #4b5063;
+  border-radius: 6px;
+  z-index: 99;
+  bottom: 0;
+  background: #121212;
+  padding-bottom: 10px;
+}
+.portrait-rang button {
+  width: 50%;
+  color: #ad9d0c;
+  font-size: 35px;
+  padding: 0;
+  text-align: center;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  border: 1px solid #4b5064 !important;
+  border-bottom: 5px solid #4b5064 !important;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.portrait-rang button:first-child {
+  border-right: 0 !important;
+}
+.portrait-rang-slide {
+  border: 5px solid #4b5064;
+  height: 300px;
+  width: 28px;
+  background: #101010;
+  border-radius: 25px;
+  text-align: center;
+  margin: 0px auto;
+  border-top: 25px solid #4b5064;
+  position: relative;
+}
+.portrait-rang-slide::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #101010;
+  position: absolute;
+  left: 0;
+  top: -8px;
+  border-radius: 25px;
+}
+.portrait-rang-slide img {
+  left: -15px;
+  bottom: 0;
+  max-width: 50px;
+}
+.portrait-rang-btn button {
+  background: #101010 !important;
+  border-radius: 0;
+  width: 100%;
+  border: 2px solid #535669 !important;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 5px;
+  text-transform: uppercase !important;
+}
+.portrait-rang-btndiv {
+  position: absolute;
+  bottom: -8%;
+  display: flex !important;
+  align-items: center !important;
+  right: 0%;
+  z-index: 99;
+}
+.portrait-rang-btn {
+  width: 50px;
+  margin-left: -3px;
+}
+.visitor {
+  margin: 0;
+  min-height: 150px;
+  border: 1px solid #008a31;
+  border-radius: 6px;
+}
+.buyin-modal .modal-content .modal-footer h6 {
+  font-size: 22px;
+}
+.realtimeresult-modal thead {
+  border-bottom: 1px solid #008a31;
+}
+.realtimeresult-modal tbody tr td {
+  font-size: 14px;
+}
+.close-btn {
+  border: 0;
+  background: #f40403;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.close-btn i {
+  font-size: 26px;
+  position: relative;
+  top: -2px;
+}
+.realtimeresult-modal .modal-header {
+  padding: 10px 10px !important;
+}
 
 
 }
@@ -1412,6 +1522,15 @@ font-size: 30px;
   width: 35px;
 }
 
+}
+
+
+@media (min-width: 360px) {
+  .realtimeresult-modal .modal-dialog {
+  width: 340px;
+  margin-right: 10px;
+  margin-left: auto;
+}
 }
 
 /* -------------Poker Table End!--------------- */

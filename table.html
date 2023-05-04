@@ -70,10 +70,15 @@
 			<div class="position-relative">
 			<button class="btn pokertable-topbtn landscape-block"><img src="assets/img/trophy.png" /></button>
 			<button class="btn pokertable-topbtn landscape-block"><img src="assets/img/cardshd.png" width="32" /></button>
-			<button class="btn pokertable-topbtn settingspopup">
+			<button class="btn pokertable-topbtn settingspopup landscape-block">
 				<img src="assets/img/settings.png" class="landscape-block" />
 				<i class="fa-solid fa-chart-simple portrait-block"></i>
 			</button>
+
+			<button class="btn pokertable-topbtn portrait-block landscape-block" data-bs-toggle="modal" data-bs-target="#exampleModalportrait">
+				<i class="fa-solid fa-chart-simple portrait-block"></i>
+			</button>
+
 			<div class="pokertablemenu-des settingpopup position-absolute top-0">
 				<button class="btn text-uppercase position-relative">Settings <i class="fa-solid fa-xmark"></i></button>
 				<ul class="pokerMenu-list">
@@ -185,6 +190,27 @@
 			</div>
 
 			</div>
+
+			<div class="portrait-rang-btndiv portrait-block d-none" style="display: none !important;">
+			<div class="portrait-rang portrait-block">
+				<div class="d-flex">
+					<button class="btn">-</button>
+					<button class="btn">+</button>
+				</div>
+				<div class="position-relative portrait-rang-slide">
+					<img src="assets/img/arrow.png" class="position-absolute">
+				</div>
+
+			</div>
+
+			<div class="portrait-rang-btn">
+				<button class="btn text-capitalize">1/2</button>
+				<button class="btn text-capitalize">3/4</button>
+				<button class="btn text-capitalize">pot</button>
+				<button class="btn text-capitalize m-0">max</button>
+			</div>
+		</div>
+
 
 		</div>
 	</div>
@@ -320,6 +346,79 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
       </div> -->
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade buyin-modal realtimeresult-modal" id="exampleModalportrait" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h5 class="modal-title text-center d-block w-100" id="exampleModalLabel"><button class="close-btn"  data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>Real Time Result</h5>
+      </div>
+      <div class="modal-body p-0">
+        <table class="table table-borderless w-100">
+        	<thead>
+        		<tr>
+        			<td class="text-center">Name</td>
+        			<td class="text-center">Buy-In</td>
+        			<td class="text-center">Winnings</td>
+        		</tr>
+        	</thead>
+        	<tbody>
+        		<tr>
+        			<td class="text-center">Shiveesinghal</td>
+        			<td class="text-center">40</td>
+        			<td class="text-center">-1</td>
+        		</tr>
+        		<tr>
+        			<td class="text-center">Shiveesinghal</td>
+        			<td class="text-center">40</td>
+        			<td class="text-center">-1</td>
+        		</tr>
+        		<tr>
+        			<td class="text-center">Shiveesinghal</td>
+        			<td class="text-center">40</td>
+        			<td class="text-center">-1</td>
+        		</tr>
+        		<tr>
+        			<td class="text-center">Shiveesinghal</td>
+        			<td class="text-center">40</td>
+        			<td class="text-center">-1</td>
+        		</tr>
+        		<tr>
+        			<td class="text-center">Shiveesinghal</td>
+        			<td class="text-center">40</td>
+        			<td class="text-center">-1</td>
+        		</tr>
+        		<tr>
+        			<td class="text-center">Shiveesinghal</td>
+        			<td class="text-center">40</td>
+        			<td class="text-center">-1</td>
+        		</tr>
+        		<tr>
+        			<td class="text-center">Shiveesinghal</td>
+        			<td class="text-center">40</td>
+        			<td class="text-center">-1</td>
+        		</tr>
+        		<tr>
+        			<td class="text-center">Shiveesinghal</td>
+        			<td class="text-center">40</td>
+        			<td class="text-center">-1</td>
+        		</tr>
+        	</tbody>
+        </table>
+      </div>
+
+      <div class="modal-footer">
+        <h6 class="d-block text-center w-100">Visitor</h6>
+        <div class="w-100 visitor">
+        	
+        </div>
+      </div>
+
+
     </div>
   </div>
 </div>
