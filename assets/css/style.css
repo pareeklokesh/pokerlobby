@@ -1264,6 +1264,153 @@ font-size: 30px;
   left: 18%;
   top: 40%;
 }
+.progressbar-portrait {
+  width: 300px !important;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  background: #101010;
+  border: 5px solid #53556a;
+  height: 90px;
+  border-radius: 5px;
+}
+.progressbar-portrait button {
+  position: absolute;
+  top: 0;
+  left: 88%;
+  height: 40px;
+  border-radius: 0;
+  background: #101010;
+  color: #ac9d06;
+  border: 1px solid #53556a !important;
+  border-left: 5px solid #53556a !important;
+}
+.progressbar-portrait button:last-child {
+  left: inherit;
+  right: 0;
+  top: 40px;
+}
+.progreshbar-poker {
+  width: 75%;
+  height: 22px;
+  background: #0b0e0b;
+  border-radius: 25px;
+  margin: 0 10px;
+  border: 4px solid #53556a;
+  border-right: 18px solid #53556a;
+  box-shadow: none;
+  position: relative;
+}
+.progreshbar-poker::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #0b0e0b;
+  position: absolute;top: 0;
+  left: 5px;
+  border-radius: 25px;
+
+}
+.progreshnumber {
+  display: none;
+}
+.chat-btn {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.chat-btn img {
+  width: 25px;
+}
+.chips-point {
+  background: rgba(0,0,0, 0.4);
+  padding: 0px 10px;
+  border-radius: 25px;
+  text-align: center;
+  width: 75px;
+  padding-left: 20px;
+}
+.chips-point p {
+  position: relative;
+}
+.chips-point p img {
+  margin: 0;
+  position: absolute;
+  left: -27px;
+  width: 25px;
+}
+.chips-point {
+  bottom: 11%;
+  left: 0;
+}
+.chips-point-1 {
+  bottom: 36%;
+  right: 32%;
+}
+.cardsupsecond-btn {
+  background: linear-gradient(#034901,#0a7d08,#034901);
+  width: 95px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 10px #000;
+}
+.cardsupsecond-btn span {
+  background: #000;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  padding: 1px 2px;
+}
+.usercards {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.usercards span, .poker-user-active p {
+  display: none;
+}
+.usercards img {
+  width: 50px;
+  margin-left: -25px;
+}
+
+
+}
+
+
+@media (max-width: 520px) and (orientation: portrait)  {
+  .pokertable-container {
+  max-width: 300px !important;
+}
+.pokertablegame {
+  height: 450px;
+}
+.poker-user {
+  left: -8%;
+}
+.poker-user.poker-user-1 {
+  left: inherit;
+  right: -8%;
+}
+.poker-user p {
+  font-size: 12px;
+}
+.poker-user-active img {
+  border-color: #008a31;
+  width: 50px;
+  height: 50px;
+}
+.usercards img {
+  width: 35px;
+  margin-left: -15px;
+}
+.gameplay-card img {
+  width: 35px;
+}
 
 }
 
