@@ -9,16 +9,20 @@
 	<link rel="stylesheet" type="text/css" href="assets/Fontawsome/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body class="overflow-x-hidden">
+<body class="overflow-x-hidden pokertable-portrait">
 	<div class="w-100" style="overflow: hidden;">
 <div class="pokertable-header container-fluid py-3">
 	<div class="row justify-content-between">
 		<div class="w-auto">
-			<div class="position-relative">
-			<button class="btn pokertable-topbtn pokertable-menu"><img src="assets/img/list.png" /></button>
+			<div class="position-relative d-flex align-items-center">
+
+			<button class="btn pokertable-topbtn pokertable-menu"><img src="assets/img/list.png" class="landscape-block" /><i class="fa-solid fa-bars portrait-block"></i></button>
+			<button class="btn pokertable-topbtn pokertable-menu portrait-block cardsup-btn"></button>
+
 			<div class="pokertablemenu-des pokertablemenumain-des position-absolute top-0">
-				<button class="btn text-uppercase"><img src="assets/img/list.png" />Menu</button>
-				<ul class="pokerMenu-list">
+				<button class="btn text-uppercase landscape-block"><img src="assets/img/list.png" />Menu</button>
+
+				<ul class="pokerMenu-list landscape-block">
 					<li class="d-block">
 						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-forward-step"></i> Resume</a>
 					</li>
@@ -41,14 +45,33 @@
 						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-right-from-bracket"></i> Exit</a>
 					</li>
 				</ul>
+
+				<ul class="pokerMenu-list-portrait">
+					<li>
+						<a href="#" class="text-capitalize"><i class="fa-solid fa-arrow-left"></i> Back to lobby</a>
+					</li>
+					<li>
+						<a href="#" class="text-capitalize"><i class="fa-solid fa-hand"></i> Sit out next hand</a>
+					</li>
+					<li>
+						<a href="#" class="text-capitalize"><i class="fa-solid fa-gear"></i> table setting</a>
+					</li>
+					<li>
+						<a href="#" class="text-capitalize"><i class="fa-solid fa-right-from-bracket"></i> exit table</a>
+					</li>
+				</ul>
+
 			</div>
 		</div>
 	</div>
 		<div class="w-auto">
 			<div class="position-relative">
-			<button class="btn pokertable-topbtn"><img src="assets/img/trophy.png" /></button>
-			<button class="btn pokertable-topbtn"><img src="assets/img/cardshd.png" width="32" /></button>
-			<button class="btn pokertable-topbtn settingspopup"><img src="assets/img/settings.png" /></button>
+			<button class="btn pokertable-topbtn landscape-block"><img src="assets/img/trophy.png" /></button>
+			<button class="btn pokertable-topbtn landscape-block"><img src="assets/img/cardshd.png" width="32" /></button>
+			<button class="btn pokertable-topbtn settingspopup">
+				<img src="assets/img/settings.png" class="landscape-block" />
+				<i class="fa-solid fa-chart-simple portrait-block"></i>
+			</button>
 			<div class="pokertablemenu-des settingpopup position-absolute top-0">
 				<button class="btn text-uppercase position-relative">Settings <i class="fa-solid fa-xmark"></i></button>
 				<ul class="pokerMenu-list">
@@ -137,7 +160,7 @@
 				<p class="mb-0 d-flex justify-content-center align-items-center"><img src="assets/img/chips.png" width="18" />1</p>
 			</div>
 
-			<div class="position-absolute pokeruserid text-center">
+			<div class="position-absolute pokeruserid text-center landscape-block">
 				# 100400029248
 			</div>
 
@@ -145,13 +168,18 @@
 			<div class="pot-point w-100 text-center">
 				<div class="w-auto">
 				<strong class="d-block text-center">Pot : 3.00</strong>
-				<div class="position-relative">
+				<div class="position-relative landscape-block">
 					<p class="position-relative mb-0"><img src="assets/img/pot.png" />0.00</p>
 				</div>
 			</div>
 			</div>
 			<div class="texasholdem-text w-100 text-center">
 				Texas HoldEm - no limit-rackback -1/2
+			</div>
+			<div class="d-flex portrait-block position-absolute gameplay-card">
+				<img src="assets/img/cards2.png" />
+				<img src="assets/img/cards3.png" />
+				<img src="assets/img/cards4.png" />
 			</div>
 
 			</div>
@@ -187,7 +215,7 @@
 
 <div class="container-fluid mb-5 mt-5 pt-3">
 	<div class="row">
-		<div class="col-6 col-md-7">
+		<div class="col-6 col-md-7 callbtn-portrait">
 			<div class="w-100 d-flex">
 			<button class="btn text-uppercase callraise-btn">Fold</button>
 			<button class="btn text-uppercase callraise-btn" style="background: linear-gradient(#18ce27, #158a1f,#1fcd2d);" data-bs-toggle="modal" data-bs-target="#exampleModal">Call <span class="d-block">1</span></button>
