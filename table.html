@@ -32,23 +32,23 @@
 						<a href="#" class="text-uppercase pokernav-item"><img src="assets/img/cash.png" width="24" />Top up</a>
 					</li>
 					<li class="d-block">
-						<a href="#" class="text-uppercase pokernav-item"><img src="assets/img/switch.png" /> Switch Table</a>
+						<a href="#" class="text-uppercase pokernav-item"><img src="assets/img/switch.png" /> Switch Table <span class="upcoming-text">Upcoming</span></a>
 					</li>
 					<li class="d-block">
-						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Stand up</a>
+						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Stand up <span class="upcoming-text">Upcoming</span></a>
 					</li>
 					<li class="d-block">
-						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Sit out</a>
+						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Sit out <span class="upcoming-text">Upcoming</span></a>
 					</li>
 					<li class="d-block">
-						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-question"></i> How to play</a>
+						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-question"></i> How to play <span class="upcoming-text">Upcoming</span></a>
 					</li>
 					<li class="d-block">
 						<a href="#" class="text-uppercase pokernav-item"><i class="fa-solid fa-right-from-bracket"></i> Exit</a>
 					</li>
 				</ul>
 
-				<ul class="pokerMenu-list-portrait">
+				<ul class="pokerMenu-list-portrait portrait-block">
 					<li>
 						<a href="#" class="text-capitalize"><i class="fa-solid fa-arrow-left"></i> Back to lobby</a>
 					</li>
@@ -83,23 +83,23 @@
 				<button class="btn text-uppercase position-relative">Settings <i class="fa-solid fa-xmark"></i></button>
 				<ul class="pokerMenu-list">
 					<li class="d-block pokernav-item text-uppercase switchToggle">
-						Sound <input type="checkbox" id="switch" class="" name="">
+						<i class="fa-solid fa-music"></i> Sound <input type="checkbox" id="switch" class="" name="">
 				    <label for="switch" class="value_add"></label>
 					</li>
 					<li class="d-block pokernav-item text-uppercase switchToggle">
-						Mute Chat <input type="checkbox" id="muteChat" class="" name="">
+						<i class="fa-solid fa-microphone-slash"></i> Mute Chat <input type="checkbox" id="muteChat" class="" name="">
 				    <label for="muteChat" class="value_add"></label>
 					</li>
 					<li class="d-block pokernav-item text-uppercase switchToggle">
-						Auto Muck <input type="checkbox" id="autoMuck" class="" name="">
+						<i class="fa-brands fa-autoprefixer"></i> Auto Muck <input type="checkbox" id="autoMuck" class="" name="">
 				    <label for="autoMuck" class="value_add"></label>
 					</li>
 					<li class="d-block pokernav-item text-uppercase switchToggle">
-						Run It Twice <input type="checkbox" id="runitTwice" class="" name="">
+						<i class="fa-brands fa-autoprefixer"></i> Run It Twice <input type="checkbox" id="runitTwice" class="" name="">
 				    <label for="runitTwice" class="value_add"></label>
 					</li>
 					<li class="d-block pokernav-item text-uppercase">
-						Table Info <img src="assets/img/tableinfo.png" class="m-0 float-end" style="vertical-align: middle;" />
+						<i class="fa-solid fa-table"></i> Table Info <img src="assets/img/tableinfo.png" class="m-0 float-end" style="vertical-align: middle;" />
 					</li>
 				</ul>
 			</div>
@@ -180,6 +180,15 @@
 				</div>
 			</div>
 			</div>
+
+			<div class="userCardsmain d-flex justify-content-center align-items-center landscape-block">
+				<img src="assets/img/cards.png" />
+				<img src="assets/img/cards.png" />
+				<img src="assets/img/cards.png" />
+				<img src="assets/img/cards.png" />
+				<img src="assets/img/cards.png" />
+			</div>
+
 			<div class="texasholdem-text w-100 text-center">
 				Texas HoldEm - no limit-rackback -1/2
 			</div>
@@ -216,7 +225,7 @@
 	</div>
 </div>
 
-<div class="container-fluid mb-5 mt-5 pt-3 d-none">
+<div class="container-fluid mb-5 mt-5 pt-3 raiseallbtn landscape-block" style="display:none;">
 	<div class="w-100 d-flex justify-content-center fold-btndiv">
 		<div class="fold-btn position-relative">
 			<input type="checkbox" id="fold" name="" class="position-absolute invisible">
@@ -247,7 +256,7 @@
 			<div class="w-100 d-flex">
 			<button class="btn text-uppercase callraise-btn">Fold</button>
 			<button class="btn text-uppercase callraise-btn" style="background: linear-gradient(#18ce27, #158a1f,#1fcd2d);" data-bs-toggle="modal" data-bs-target="#exampleModal">Call <span class="d-block">1</span></button>
-			<button class="btn text-uppercase callraise-btn m-0" style="background: linear-gradient(#1854ce, #173d88,#1854ce);">Raise <span class="d-block">3</span></button>
+			<button class="btn text-uppercase callraise-btn m-0 raisebtn" style="background: linear-gradient(#1854ce, #173d88,#1854ce);">Raise <span class="d-block">3</span></button>
 		</div>
 		</div>
 		<div class="col-6 col-md-5 position-relative landscape-block">
@@ -452,6 +461,15 @@ $(".settingpopup button i").click(function(){
 <script>
 	$(".chat-btn").click(function(){
 		$(".chatbox").toggleClass("chatbox-open");
+	});
+	$(".raisebtn").click(function(){
+		debugger
+		$(".raiseallbtn").show();
+		$(".portrait-rang-btndiv").css("display", "flex");
+		setTimeout(function(){
+			$(".raiseallbtn").hide();
+		}, 4000);
+		
 	});
 </script>
 

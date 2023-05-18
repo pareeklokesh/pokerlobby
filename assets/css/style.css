@@ -419,7 +419,7 @@ margin-top: 15px;}
 /* -------------Poker Table--------------- */
 
 .pokertable-container {
-  max-width: 1140px !important;
+  max-width: 850px !important;
 }
 .pokertable-topbtn {
   border: 2px solid #439744;
@@ -444,7 +444,7 @@ a {
   opacity: 0;
   visibility: hidden;
   transition: all .4s linear;
-  z-index: 9;
+  z-index: 999;
 }
 .pokertablemenu-des button {
   width: 100%;
@@ -474,6 +474,7 @@ a {
   border-bottom: 1.9px solid #335334;
   padding: 8px 30px;
   transition: all .4s linear;
+  position: relative;
 }
 .pokernav-item img, .pokernav-item i {
   margin-right: 20px;
@@ -502,7 +503,7 @@ a {
   width: 60px;
   max-width: 70px;
   height: 25px;
-  background: #881817;
+  background: #335334;
   display: inline-block;
   border-radius: 100px;
   position: relative;
@@ -521,7 +522,7 @@ a {
   border-radius: 90px;
   transition: 0.3s;
   text-indent: 0;
-  color: #fff;
+  color: #2a2d2b;
   font-size: 14px;
 }
 .switchToggle label::after {
@@ -531,7 +532,7 @@ a {
   left: 2px;
   width: 21px;
   height: 21px;
-  background: #fff;
+  background: #2a2d2b;
   border-radius: 90px;
   transition: 0.3s;
 }
@@ -552,7 +553,8 @@ a {
   transform: translateX(-100%);
 }
 .settingpopup .pokernav-item {
-  padding: 8px 10px;
+  padding: 12px 10px;
+  font-size: 14px;
 }
 .settingpopup .pokernav-item:hover {
   background: transparent;
@@ -581,7 +583,7 @@ a {
   background: url('../img/table_poker.png') no-repeat;
   background-size: cover;
   background-position: top center;
-  height: 540px;
+  height: 400px;
 }
 .poker-user img {
   width: 50px;
@@ -1002,6 +1004,29 @@ font-size: 30px;
 .portrait-block {
   display: none !important;
 }
+.upcoming-text {
+  font-size: 10px;
+  color: #cece09;
+  display: block;
+  text-align: right;
+  text-transform: capitalize;
+  margin-top: -3px;
+}
+.pokernav-item:hover .upcoming-text {
+  color: #fff;
+}
+.userCardsmain {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 0;
+  bottom: 0;
+}
+.settingpopup .pokernav-item i {
+  margin-right: 3px;
+  color: #335334;
+}
 
 
 
@@ -1108,16 +1133,26 @@ font-size: 30px;
 .poker-user-3 {
   right: -40px;
 }
+.portrait-rang-btn {
+    display: none !important;
+  }
 
 }
 
+
+@media (min-width: 767px) {
+  .portrait-rang-btn {
+    display: none !important;
+  }
+}
 
 @media (max-width: 767px) and (orientation: portrait) {
+  
+.landscape-block {
+  display: none !important;
+}
   .portrait-block {
   display: block !important;
-}
-.landscape-block {
-  display: none;
 }
 .pokertable-portrait {
   background: linear-gradient(#2e2f2a, #070906) !important;
@@ -1329,7 +1364,7 @@ font-size: 30px;
   padding: 0px 10px;
   border-radius: 25px;
   text-align: center;
-  width: 75px;
+  width: 60px;
   padding-left: 20px;
 }
 .chips-point p {
@@ -1343,7 +1378,7 @@ font-size: 30px;
 }
 .chips-point {
   bottom: 11%;
-  left: 0;
+  left: -28px;
 }
 .chips-point-1 {
   bottom: 36%;
@@ -1486,6 +1521,16 @@ font-size: 30px;
 }
 .realtimeresult-modal .modal-header {
   padding: 10px 10px !important;
+}
+.callbtn-portrait {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+}
+.texasholdem-text {
+  top: 8%;
+  bottom: inherit;
+  font-size: 12px;
 }
 
 
