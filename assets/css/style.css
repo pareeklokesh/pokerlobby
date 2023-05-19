@@ -1866,6 +1866,8 @@ font-size: 30px;
   position: fixed;
   bottom: 0;
   margin-bottom: 0;
+  left: 0;
+  padding: 0 15px;
 }
 .texasholdem-text {
   top: 8%;
