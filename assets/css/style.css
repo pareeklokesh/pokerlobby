@@ -163,6 +163,230 @@ padding-bottom: 2px;
 .tablenumber-des p span {
   padding-right: 30px;
 }
+.privateModal .modal-content {
+  background: #010101;
+  border: 1.9px solid #4ab74d;
+}
+.privateModal .modal-header h5 {
+  color: var(--maincolor);
+  font-size: 26px;
+  font-weight: 600;
+}
+.privateModal .modal-header button.btn-close i {
+  color: var(--maincolor);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 11px;
+}
+.privateModal .modal-header button.btn-close i {
+  color: var(--maincolor);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 11px;
+  font-size: 26px;
+}
+.privateModal .modal-header {
+  border-bottom: 1.9px solid #4ab74d;
+  padding: 5px 15px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+}
+.privateModal .modal-header button.btn-close {
+  position: relative;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  right: -13px;
+}
+.joinplay-btn-hd {
+  font-size: 22px;
+}
+.joinplay-btninput {
+  border: 1.9px solid #4ab74d;
+  background: #24252e;
+  padding: 5px;
+  border-radius: 2px;
+  width: 150px;
+}
+.joinplay-btn.mb-0 {
+  background: linear-gradient(#a91a27, #710e15);
+  border: 0;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.privateTableData thead th {
+  background: #131313;
+  border-right: 4px solid #010101;
+  font-size: 16px;
+  color: var(--maincolor);
+}
+.privateTableData tfoot tr td {
+  color: #1c2023;
+}
+.privateTableData {
+  border-bottom: 2px solid #4ab74d;
+}
+.privateModal .modal-body {
+  min-height: 320px;
+}
+.privatetable-create {
+  background: linear-gradient(#188d1a, #1f3c1f 49%);
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin-left: 8px;
+}
+.filterfixbtn button {
+  border: 2px solid #1b1835;
+  background: #000;
+  padding: ;
+  width: 45px;
+  height: 40px;
+  border-radius: 4px;
+}
+.pokertablemenu-des.filterfixdes {
+  left: inherit;
+  right: 10px;
+  transform: translate(200%);
+  top: inherit !important;
+  bottom: 60px;
+  position: absolute !important;
+  height: auto !important;
+  border: 1.9px solid #4ab74d !important;
+  padding-top: 0px !important;
+}
+.pokertablemenu-des.filterfixdes-open {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
+}
+.filterfixdes .pokernav-item {
+  padding: 10px;
+  font-size: 14px;
+}
+.filterfixdes .pokernav-item i {
+  margin-right: 0;
+}
+.stakesradiodiv {
+  list-style: none;
+  background: #29292a;
+  border: 1.9px solid #64201c;
+  left: 0;
+  width: 190px;
+  padding: 6px;
+  top: -20px;
+  border-radius: 8px 8px 2px 2px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -1;
+  transition: all .4s linear;
+}
+.autodroup input {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+.autodroup label {
+  background: #222322;
+  padding: 7px 35px 7px 12px;
+  border: 1.9px solid #3a3a3a;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.autodroup label::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: #000;
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  font-family: "Font Awesome 6 Free";
+  border-radius: 50%;
+}
+.autodroup input:checked + label::before {
+  background: #fd0000;
+}
+.stakesradiodiv li {
+  display: block;
+  margin-bottom: 5px;
+}
+.filterfixdes .pokernav-item:hover .stakesradiodiv {
+  left: -83%;
+  opacity: 1;
+  z-index: 9;
+  visibility: visible;
+}
+.profile-menu {
+  border-radius: 2px;
+  width: 60px;
+  margin-right: ;
+}
+.pokerlobbymenu-des {
+  width: 290px !important;
+}
+.pokerlobbymenu-des button {
+  font-size: 16px !important;
+  text-transform: capitalize !important;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pokerlobbymenu-des .lobbyclose-btn {
+  border: 0 !important;
+  background: #f40403;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 0;
+}
+.pokertablemenu-des .logout-lobbybtn {
+  background: linear-gradient(#a91a27, #710e15);
+  margin: 0px auto;
+  margin-bottom: 8px;
+  width: auto;
+  text-align: center;
+  margin-top: 8px;
+  border: 0 !important;
+  border-radius: 6px !important;
+  text-transform: uppercase !important;
+  padding: 5px 15px;
+}
+.pokerlobbymenu-des button.landscape-block {
+  display: flex !important;
+}
+.pokerlobbymenu-des {
+  padding-top: 0 !important;
+  border: 1.9px solid #4ab74d !important;
+}
+.bodyoverflow {
+  overflow-x: hidden !important;
+}
+
+
+
 
 
 @media (min-width: 768px) {
@@ -175,8 +399,28 @@ padding-bottom: 2px;
 .playnow-btn {
   padding-right: 38px;
 }
+.privateModal .modal-dialog {
+  max-width: 680px;
+}
 
 }
+@media (max-width:767px) {
+  .filterfixdes .pokernav-item {
+  padding: 10px;
+  font-size: 12px;
+}
+.pokertablemenu-des.filterfixdes-open {
+  width: 190px;
+}
+.stakesradiodiv {
+  width: 130px;
+}
+.filterfixdes .pokernav-item:hover .stakesradiodiv {
+  left: -70%;
+}
+
+}
+
 @media (max-width: 767px) and (orientation: landscape) {
   .texasholdem-tabs .nav-tabs li button, .texasholdemTable thead tr th, .texasholdemTable tbody tr td {
   font-size: 12px;
@@ -384,8 +628,37 @@ margin-top: 15px;}
 .profileDetails p {
   border: 2px solid #504581;
 }
+.privateModal .modal-header {
+  border-bottom: 1.9px dashed #4ab74d;
+}
+.privateTableData.mt-3 {
+  display: none;
+}
+.joinplayDiv .w-auto {
+  width: 100% !important;
+  text-align: center;
+  margin-bottom: 18px;
+}
+.joinplay-btninput {
+  width: 100%;
+  background: #1e0219;
+  border: 0;
+}
+.privatetable-create {
+  background: linear-gradient(#a91a27, #710e15);
+  font-size: 14px;
+  padding: 5px 6px;
+  margin-left: 5px;
+}
+.privateModal p {
+  font-size: 13px;
+}
+.joinplay-btn-hd span {
+  display: inline-block !important;
+}
 
 }
+
 @media (max-width: 420px) and (orientation: portrait) {
   .texasholdemTable tbody tr td::before, .texasholdemTable tbody tr td .nlh-bg, .texasholdemTable tbody tr td {
     font-size: 12px;
@@ -475,6 +748,7 @@ a {
   padding: 8px 30px;
   transition: all .4s linear;
   position: relative;
+  cursor: pointer;
 }
 .pokernav-item img, .pokernav-item i {
   margin-right: 20px;
@@ -1147,7 +1421,7 @@ font-size: 30px;
 }
 
 @media (max-width: 767px) and (orientation: portrait) {
-  
+
 .landscape-block {
   display: none !important;
 }

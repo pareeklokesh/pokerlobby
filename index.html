@@ -9,13 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="assets/Fontawsome/css/all.min.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bodyoverflow" style="overflow-x: hidden !important;">
+  <div class="w-100" style="overflow: hidden;">
 <div class="header container-fluid">
 	<div class="row align-items-center justify-content-between flex-nowrap">
 		<div class="w-auto">
 			<div class="d-flex align-items-center">
 				<button class="btn backbtn me-3"><img src="assets/img/backarrow.png" /></button>
-				<div class="profileDetails d-flex align-items-center">
+				<div class="profileDetails d-flex align-items-center lobbytable-menu">
 					<img class="profileUser rounded-pill position-relative" src="assets/img/user-thumbnail.jpg" />
 					<p class="m-0"><label>Shiveesinghal</label><span>₹ 7887.24 <img src="assets/img/wallet.png" width="24" /></span></p>
 				</div>
@@ -27,7 +28,7 @@
 			</a>
 		</div>
 		<div class="w-auto text-end d-flex align-items-center justify-content-end ps-0" style="min-width: 280px;">
-			<button class="btn userslash-btn position-relative">
+			<button class="btn userslash-btn position-relative" data-bs-toggle="modal" data-bs-target="#privateModal">
 			<i class="fa-solid fa-users-slash"></i>
 			<span class="privateBtn">Private</span>
 			</button>
@@ -154,6 +155,188 @@
 		</div>
 </div>
 
+<div class="filterfixbtn position-fixed end-0 bottom-0 pe-1 pb-1">
+  <button class="filterBtn"><img src="assets/img/filter.png" /></button>
+</div>
+<div class="pokertablemenu-des filterfixdes position-absolute top-0">
+        <ul class="pokerMenu-list">
+          <li class="d-block pokernav-item text-uppercase switchToggle position-relative">
+            <i class="fa-regular fa-circle-play"></i> All Games
+          </li>
+          <li class="d-block pokernav-item text-uppercase position-relative">
+            <i class="fa-regular fa-circle-play"></i> Stakes: ALL 
+            <ul class="position-absolute stakesradiodiv">
+              <li class="position-relative">
+                <div class="autodroup">
+        <input type="radio" id="autodrop" name="stakesradio">
+        <label for="autodrop">All</label>
+      </div>
+              </li>
+              <li class="position-relative">
+                <div class="autodroup">
+        <input type="radio" id="low" name="stakesradio">
+        <label for="low">Low</label>
+      </div>
+              </li>
+              <li class="position-relative">
+                <div class="autodroup">
+        <input type="radio" id="medium" name="stakesradio">
+        <label for="medium">Medium</label>
+      </div>
+              </li>
+              <li class="position-relative mb-0">
+                <div class="autodroup">
+        <input type="radio" id="high" name="stakesradio">
+        <label for="high">High</label>
+      </div>
+              </li>
+
+            </ul>
+          </li>
+          <li class="d-block pokernav-item text-uppercase switchToggle position-relative">
+            <i class="fa-regular fa-circle-play"></i> Stakes: ALL 
+          </li>
+          <li class="d-block pokernav-item text-uppercase switchToggle position-relative">
+            <i class="fa-regular fa-circle-play"></i> Seats: FULL <input type="checkbox" id="autoMuck" class="" name="">
+            <label for="autoMuck" class="value_add"></label>
+          </li>
+          <li class="d-block pokernav-item text-uppercase switchToggle position-relative">
+            <i class="fa-regular fa-circle-play"></i> Hide: Empty <input type="checkbox" id="runitTwice" class="" name="">
+            <label for="runitTwice" class="value_add"></label>
+          </li>
+        </ul>
+      </div>
+
+
+      <!-- -----------------Menu------------------------- -->
+
+      <div class="pokertablemenu-des pokertablemenumain-des pokerlobbymenu-des position-absolute top-0">
+        <button class="btn text-uppercase landscape-block"><img class="profile-menu position-relative" src="assets/img/user-thumbnail.jpg"><span><span class="d-block w-100">Hi,</span>Shiveesinghal</span></button>
+        <button class="lobbyclose-btn" data-bs-dismiss="modal"><i class="fa-solid fa-xmark"></i></button>
+
+        <ul class="pokerMenu-list">
+          <li class="d-block">
+            <a href="#" class="text-capitalize pokernav-item"><i class="fa-solid fa-forward-step"></i> transaction</a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-capitalize pokernav-item"><img src="assets/img/cash.png" width="24" />KYC</a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-capitalize pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Bank Details</a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-capitalize pokernav-item"><i class="fa-solid fa-person-arrow-up-from-line"></i> Deposit History </a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-capitalize pokernav-item"><i class="fa-solid fa-question"></i> My Transactions</a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-capitalize pokernav-item"><i class="fa-solid fa-right-from-bracket"></i> My Invitations</a>
+          </li>
+          <li class="d-block">
+            <a href="#" class="text-capitalize pokernav-item"><i class="fa-solid fa-right-from-bracket"></i> Player Invitations</a>
+          </li>
+          <li class="d-block">
+            <button class="text-uppercase logout-lobbybtn">LOgout</button>
+          </li>
+        </ul>
+
+      </div>
+
+<!-- -----------------Menu------------------------- -->
+
+<!-- Private Modal -->
+
+<div class="modal fade privateModal" id="privateModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header justify-content-between align-items-center">
+        <button class="btn userslash-btn position-relative">
+      <i class="fa-solid fa-users-slash"></i>
+      <span class="privateBtn">Private</span>
+      </button>
+        <h5 class="modal-title pt-2" id="exampleModalLabel">Private Table</h5>
+        <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <div class="row justify-content-center align-items-center joinplayDiv">
+          <div class="w-auto">
+          <h6 class="joinplay-btn-hd mb-0"><span class="d-none"> Room</span> Code</h6>
+        </div>
+        <div class="w-auto">
+          <input type="text" name="" class="joinplay-btninput mb-0">
+        </div>
+        <div class="w-auto">
+          <button class="joinplay-btn mb-0">Join & Play</button>
+        </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <table class="table table-borderless privateTableData mt-3">
+              <thead>
+                <tr>
+                  <th class="text-center">Game</th>
+                  <th class="text-center">Blinds</th>
+                  <th class="text-center">Buy - In</th>
+                  <th class="text-center">Expiry Date</th>
+                  <th class="text-center">Code</th>
+                  <th class="text-center">Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td colspan="6" class="text-center">No tables available</td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+
+      </div>
+      <div class="modal-footer border-0 justify-content-center">
+        <p class="d-block text-center">Want to create a private table? <button class="privatetable-create border-0">Create Now</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- Private Modal End! -->
+
+
+
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+<script>
+  $(".filterBtn").click(function(){
+  $(".filterfixdes").toggleClass("filterfixdes-open");
+});
+</script>
+
+<script>
+    $(function() {
+  $(".lobbytable-menu").on("click", function(e) {
+    $(".pokertablemenumain-des").toggleClass("pokertablemenu-des-open");
+    e.stopPropagation()
+  });
+  $(document).on("click", function(e) {
+    if ($(e.target).is(".side_bar") === false) {
+      $(".pokertablemenumain-des").removeClass("pokertablemenu-des-open");
+    }
+  });
+});
+
+</script>
+
 </body>
 </html>
