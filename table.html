@@ -200,7 +200,7 @@
 
 			</div>
 
-			<div class="portrait-rang-btndiv portrait-block d-none" style="display: none !important;">
+			<div class="portrait-rang-btndiv portrait-block d-none" style="">
 			<div class="portrait-rang portrait-block">
 				<div class="d-flex">
 					<button class="btn">-</button>
@@ -463,9 +463,9 @@ $(".settingpopup button i").click(function(){
 		$(".chatbox").toggleClass("chatbox-open");
 	});
 	$(".raisebtn").click(function(){
-		debugger
+		
 		$(".raiseallbtn").show();
-		$(".portrait-rang-btndiv").css("display", "flex");
+		$(".portrait-rang-btndiv").toggleClass("portrait-rang-btndiv-block");
 		setTimeout(function(){
 			$(".raiseallbtn").hide();
 		}, 4000);
