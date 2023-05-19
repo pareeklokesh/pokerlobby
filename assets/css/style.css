@@ -384,6 +384,12 @@ padding-bottom: 2px;
 .bodyoverflow {
   overflow-x: hidden !important;
 }
+.lobbytable-menu.backbtn i {
+  font-size: 35px;
+}
+.lobbytable-menu.backbtn {
+  border: 0;
+}
 
 
 
@@ -417,6 +423,9 @@ padding-bottom: 2px;
 }
 .filterfixdes .pokernav-item:hover .stakesradiodiv {
   left: -70%;
+}
+.lobbytable-menu.backbtn i {
+  font-size: 28px;
 }
 
 }
