@@ -14,7 +14,6 @@ body {
 }
 img {max-width: 100%;}
 .backbtn i {
-  color: #4bb84d;
   font-size: 20px;
 }
 .backbtn {
@@ -384,12 +383,9 @@ padding-bottom: 2px;
 .bodyoverflow {
   overflow-x: hidden !important;
 }
-.lobbytable-menu.backbtn i {
+/*.lobbytable-menu.backbtn i {
   font-size: 35px;
-}
-.lobbytable-menu.backbtn {
-  border: 0;
-}
+}*/
 
 
 
@@ -426,6 +422,9 @@ padding-bottom: 2px;
 }
 .lobbytable-menu.backbtn i {
   font-size: 28px;
+}
+.btn.pokertable-topbtn.me-3.lobbytable-menu {
+  margin-right: 5px !important;
 }
 
 }
@@ -1762,12 +1761,12 @@ font-size: 30px;
   text-transform: uppercase !important;
 }
 .portrait-rang-btndiv {
-  position: absolute;
-  bottom: -8%;
+  position: fixed;
+  bottom: 40px;
   display: flex !important;
   align-items: center !important;
-  right: 0%;
-  z-index: 99;
+  right: 6px;
+  z-index: 999;
 }
 .portrait-rang-btn {
   width: 50px;
