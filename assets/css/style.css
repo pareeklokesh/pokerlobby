@@ -1309,6 +1309,7 @@ font-size: 30px;
   margin-right: 3px;
   color: #335334;
 }
+.portrait-rang-btndiv {display: none !important;}
 
 
 
@@ -1813,6 +1814,10 @@ font-size: 30px;
   top: 8%;
   bottom: inherit;
   font-size: 12px;
+}
+.portrait-rang-btndiv {display: none !important;}
+.portrait-rang-btndiv-block {
+  display: flex !important;
 }
 
 
