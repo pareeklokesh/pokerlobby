@@ -721,6 +721,10 @@ margin-top: 15px;}
 .joinplay-btn-hd span {
   display: inline-block !important;
 }
+.texasholdemTable tbody tr td.nodataTd {
+  padding-bottom: 40px;
+border-radius: 6px;
+}
 
 }
 
