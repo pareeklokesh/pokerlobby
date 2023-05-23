@@ -16,7 +16,7 @@
 		<div class="w-auto">
 			<div class="position-relative d-flex align-items-center">
 
-			<button class="btn pokertable-topbtn pokertable-menu"><img src="assets/img/list.png" class="landscape-block" /><i class="fa-solid fa-bars portrait-block"></i></button>
+			<button class="btn pokertable-topbtn pokertable-menu pokertable-menu-btn"><img src="assets/img/list.png" class="landscape-block" /><i class="fa-solid fa-bars portrait-block"></i></button>
 			<button class="btn pokertable-topbtn pokertable-menu portrait-block cardsup-btn"></button>
 			<button class="btn pokertable-topbtn pokertable-menu portrait-block cardsup-btn cardsupsecond-btn"><img src="assets/img/cards2.png" width="20"><img src="assets/img/cards2.png" width="20">
 				<span class="position-absolute">1001405</span></button>
@@ -680,7 +680,7 @@
 
 <script>
     $(function() {
-  $(".pokertable-menu").on("click", function(e) {
+  $(".pokertable-menu-btn").on("click", function(e) {
     $(".pokertablemenumain-des").toggleClass("pokertablemenu-des-open");
     e.stopPropagation()
   });
