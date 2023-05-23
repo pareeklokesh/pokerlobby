@@ -6,7 +6,7 @@
   color: #fff;
   box-sizing: border-box;
 }
-body {
+body, html {
 	background: #0a0a0a !important;
   color: #fff;
   margin: 0 !important;
@@ -156,7 +156,7 @@ padding-bottom: 2px;
   text-align: center;
 }
 .setting-btn {
-  display: none;
+  margin-left: 15px;
 }
 .portrait-tab-text {display: none;}
 .tablenumber-des p span {
@@ -392,7 +392,7 @@ padding-bottom: 2px;
   padding: 10px;
 }
 .handpopup {
-  bottom: 0;
+  bottom: 55px;
   left: 5px;
 }
 .borderFull {
@@ -1498,9 +1498,9 @@ font-size: 30px;
   .portrait-block {
   display: block !important;
 }
-.pokertable-portrait {
+/*.pokertable-portrait, html {
   background: linear-gradient(#2e2f2a, #070906) !important;
-}
+}*/
 .pokertable-topbtn i {
   color: #3fad57;
   font-size: 20px;
