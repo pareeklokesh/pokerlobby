@@ -1,282 +1,343 @@
+:root {
+	--maincolor:#4bb84d;
+}
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-size: 14px;
 	font-family: 'Poppins', sans-serif;
-	color: #fff;
+  color: #fff;
+  box-sizing: border-box;
 }
- @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
- body {
- 	background: #170c06;
- }
- .w-100 {
- 	width: 100%;
- }
- .header {
-  padding: 15px;
-  padding-bottom: 0;
+body, html {
+	background: #0a0a0a !important;
+  color: #fff;
+  margin: 0 !important;
+  padding: 0 !important;
 }
- .d-flex {
- 	display: flex;
- }
- .justify-content-center {
- 	justify-content: center;
- }
- .align-items-center {
- 	align-items: center;
- }
- .flex-wrap {
- 	flex-wrap: wrap
- }
- .justify-content-between {
- 	justify-content: space-between;
- }
- .backbtn {
-  border: 0;
-  background: transparent;
+img {max-width: 100%;}
+.backbtn i {
+  font-size: 20px;
 }
 .backbtn {
-  background: linear-gradient(to top, #fa9222, #ffe04d, #fff9b1);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  font-size: 18px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.backbtn i {color: #000;font-size: 25px;}
-.me-5 {
-	margin-right: 15px !important;
-}
-.userprofile p, .addcasebtn {
-  background: #372608;
-  border: 1px solid #bcaf61;
-  padding: 3px 8px;
-  border-radius: 4px;
-  margin-left: -7px;
-}
-.userprofile img {
-  position: relative;
-  z-index: 1;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-}
-.m-0 {
-	margin: 0px !important;
-}
-.addcasebtn i {
-	color: #66dc18;
-}
-.addcasebtn i {
-  color: #fff;
-  background: #66dc18;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  font-size: 11px;
-  padding: 2px;
-}
-.btnsetting {
-  background: transparent;
-  border: 0;
-  color: #fcab24;
-  padding: 5px;
-}
-.btnsetting i {
-  color: #fcab24;
-  font-size: 22px;
-}
-.points-btn {
-  text-transform: uppercase;
-  border: 2px solid #3d8f29;
-  border-radius: 6px;
-  background: transparent;
-  font-weight: 600;
-  font-size: 18px;
-  letter-spacing: 1px;
-  padding: 3px 15px;
-  margin-right: 18px;
-  transition: all .4s linear;
-  line-height: normal;
-}
-.points-btn:hover {
-  background: #3d8f29;
-}
-.position-relative {
+  padding: 0;
   position: relative;
 }
-.points-btn::before {
-  content: "";
-  width: 18px;
-  height: 18px;
-  border: 0px solid #3d8f29;
-  border-radius: 50%;
-  font-size: 11px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  right: -8px;
-  top: -9px;
-  background: transparent;
-  color: #3d8f29;
-  transition: all .4s linear;
+.profileUser {
+  width: 75px;
+  height: 75px;
+  border: 2px solid var(--maincolor);
 }
-.pointactive::before {
-  content: "\f00c";
-border: 2px solid #3d8f29;
-background: #170c06;
-font-family: "Font Awesome 6 Free";
-transform: scale(0);
-}
-.pointactive.active::before {
-  transform: scale(1);
-}
-.points-btn.pointactive:hover::before {
-  background: #3d8f29;
+.profileDetails p {
+  background: #252525;
   color: #fff;
-}
-.points-btn.pointactive:nth-child(2)::before {
-  color: #6fbb95;
-  border-color: #6fbb95;
-}
-.points-btn.pointactive:nth-child(3)::before {
-  color: #d1ab46;
-  border-color: #d1ab46;
-}
-.points-btn.pointactive:nth-child(2):hover::before, .points-btn.pointactive:nth-child(2):hover {
-  color: #fff;
-  background: #6fbb95;
-}
-.points-btn.pointactive:nth-child(3):hover::before, .points-btn.pointactive:nth-child(3):hover {
-  color: #fff;
-  background: #d1ab46;
-}
-.playersactive li {
-  font-size: 14px;
-  padding: 6px 8px;
-  border-radius: 4px;
-}
-.playersactive {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  border: 2px solid #d1ab46;
+  border: 2px solid var(--maincolor);
   border-radius: 6px;
+  margin-left: -25px !important;
 }
-.playersactive li.active {
+.profileDetails p span {
+  display: block;
   background: #fff;
-  color: #170c06;
+  color: #0a0a0a;
+  border-radius: 0 0 4px 0;
 }
-.cardcontent p {
-  color: #117376;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 14px;
+.profileDetails p label, .profileDetails p span {
+  padding-left: 30px;
+  padding-right: 10px;
+  padding-top: 2px;
+padding-bottom: 2px;
 }
-.cardcontent h2 {
-  background: #117376;
-  border-radius: 6px;
-  font-size: 22px;
-  font-weight: 600;
-  padding: 10px 5px;
-  margin: 8px 0;
+.userslash-btn {
+  border: 2px solid var(--maincolor) !important;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: var(--maincolor) !important;
+  padding: 0;
 }
-.cardcontent span {
-  display: block;
-  font-size: 11px;
+.userslash-btn i {color: var(--maincolor);}
+.userslash-btn i {
+  font-size: 26px;
+}
+.privateBtn {
+  background: #fff;
+  color: #000;
   font-weight: 400;
-  margin-top: 3px;
-}
-.cardcontent .opentable {
-  color: #875b12;
-  text-transform: capitalize;
+  position: absolute;
+  left: -16px;
+  bottom: -14px;
+  padding: 1px 15px;
+  border: 2px solid var(--maincolor);
+  border-radius: 25px;
   font-size: 12px;
-  margin-bottom: 8px;
-  text-align: center;
-  display: block;
 }
-.carddiv {
-  width: 14.2%;
-  padding: 0 10px;
-  margin-top: 20px;
+.header {
+  padding: 8px 25px;
 }
-.cardcontent {
-  text-align: center;
-  border: 1px solid #fff;
-  padding: 15px;
-  border-radius: 8px;
+.texasholdem-tabs {
+	border-top: 2px solid var(--maincolor);
+}
+.texasholdemTable thead {
+  background: linear-gradient(to bottom, #202020, #141414);
+}
+.texasholdem-tabs .nav-tabs li button {
+  border-bottom: 2px solid transparent !important;
+}
+.texasholdem-tabs .nav-tabs li button, .texasholdem-tabs .nav-tabs li button.active  {
+	color: #f4ba01;
+  background:transparent !important;
+  border: 0;
+}
+.texasholdem-tabs .nav-tabs li button.active  {
+  border-bottom: 2px solid var(--maincolor) !important; 
+}
+.texasholdem-tabs .nav-tabs li button {
+  font-size: 18px;
+  font-weight: 600;
+  border: 0px !important;
+  border-right: 1px solid #232423 !important;
+  border-radius: 0;
+}
+.texasholdem-tabs .nav-tabs li:last-child button {
+  border-right: 0 !important;
+}
+.texasholdem-tabs .nav-tabs {
+  border: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #202020, #141414);
+}
+.texasholdemTable thead tr th {
+  color: #f4ba01;
+  font-weight: 400;
+}
+.texasholdemTable tbody tr td {
+  font-weight: 400;
+  font-size: 14px;
+  color: #fff;
+  position: relative;
+  vertical-align: middle;
+}
+.texasholdemTable tbody tr td i {
+  background: var(--maincolor);
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+  padding: 6px;
 }
 .playnow-btn {
-  width: 100%;
-  background: #66db1b;
-  color: #170c06;
+  background: linear-gradient(to bottom, #f0bc00, #4c3d09);
   border: 0;
-  text-transform: uppercase;
-  padding: 8px 5px;
-  border-radius: 4px;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  min-width: 100px;
+  text-align: center;
+  position: relative;
+}
+.playnow-btn i {
+  position: absolute;
+  right: 8px;
+  background: #fff !important;
+  color: #8d6c04 !important;
+  top: 4px;
+}
+.texasholdemTable {
+  border-color: var(--maincolor);
+}
+.texasholdemTable thead tr, .texasholdemTable thead tr th {
+  border: 0;
+}
+.tableFilter i {
+  color: var(--maincolor);
+}
+.texasholdem-tabs .nav-tabs li.tableFilter button {
+  border-right: 1px solid #232423 !important;
+  padding: 9px 10px;
+}
+.texasholdemTable tbody tr td, .texasholdemTable thead tr th {
+  text-align: center;
+}
+.setting-btn {
+  margin-left: 15px;
+}
+.portrait-tab-text {display: none;}
+.tablenumber-des p span {
+  padding-right: 30px;
+}
+.privateModal .modal-content {
+  background: #010101;
+  border: 1.9px solid #4ab74d;
+}
+.privateModal .modal-header h5 {
+  color: var(--maincolor);
+  font-size: 26px;
   font-weight: 600;
 }
-.addfunds-btn {
-  background: #fcab24;
+.privateModal .modal-header button.btn-close i {
+  color: var(--maincolor);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 11px;
+}
+.privateModal .modal-header button.btn-close i {
+  color: var(--maincolor);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 11px;
+  font-size: 26px;
+}
+.privateModal .modal-header {
+  border-bottom: 1.9px solid #4ab74d;
+  padding: 5px 15px;
+  padding-bottom: 18px;
+  padding-left: 22px;
+}
+.privateModal .modal-header button.btn-close {
+  position: relative;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  right: -13px;
+}
+.joinplay-btn-hd {
+  font-size: 22px;
+}
+.joinplay-btninput {
+  border: 1.9px solid #4ab74d;
+  background: #24252e;
+  padding: 5px;
+  border-radius: 2px;
+  width: 150px;
+}
+.joinplay-btn.mb-0 {
+  background: linear-gradient(#a91a27, #710e15);
+  border: 0;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+.privateTableData thead th {
+  background: #131313;
+  border-right: 4px solid #010101;
+  font-size: 16px;
+  color: var(--maincolor);
+}
+.privateTableData tfoot tr td {
+  color: #1c2023;
+}
+.privateTableData {
+  border-bottom: 2px solid #4ab74d;
+}
+.privateModal .modal-body {
+  min-height: 320px;
+}
+.privatetable-create {
+  background: linear-gradient(#188d1a, #1f3c1f 49%);
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 5px;
+  padding: 5px 8px;
+  margin-left: 8px;
+}
+.filterfixbtn button {
+  border: 2px solid #1b1835;
+  background: #000;
+  padding: ;
+  width: 45px;
+  height: 40px;
   border-radius: 4px;
 }
-button {
-  cursor: pointer;
+.pokertablemenu-des.filterfixdes {
+  left: inherit;
+  right: 10px;
+  transform: scale(0);
+  top: inherit !important;
+  bottom: 60px;
+  position: absolute !important;
+  height: auto !important;
+  border: 1.9px solid #4ab74d !important;
+  padding-top: 0px !important;
 }
-.points-btn {
-  min-width: 115px;
+.pokertablemenu-des.filterfixdes-open {
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
 }
-.headerTop {
-  margin-bottom: 20px;
+.filterfixdes .pokernav-item {
+  padding: 10px;
+  font-size: 14px;
 }
-.playersactive li {
-  cursor: pointer;
+.filterfixdes .pokernav-item i {
+  margin-right: 0;
 }
-.cardslide {
-  transition: all .4s linear;
-}
-.nav-tabs.playersdiv {
-  padding: 0 30px;
-  margin-bottom: 14px;
-}
-.pokertable-topbtn {
-  background: linear-gradient(to top, #fa9222, #ffe04d, #fff9b1);
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: 0;
-}
-.pokertable-topbtn i {
-  color: #000;font-size: 25px;
-}
-.pokertablemenu-des {
-  background: #1f1200;
-border: 1px solid #bcaf61 !important;
+.stakesradiodiv {
+  list-style: none;
+  background: #29292a;
+  border: 1.9px solid #64201c;
+  left: 0;
+  width: 190px;
+  padding: 6px;
+  top: -20px;
   border-radius: 8px 8px 2px 2px;
-  width: 235px;
-  transform: translate(-200%);
   opacity: 0;
   visibility: hidden;
+  z-index: -1;
   transition: all .4s linear;
-  z-index: 999;
 }
-.pokerlobbymenu-des {
-  padding-top: 0 !important;
-  background: #1f1200;
-border: 1px solid #bcaf61 !important;
-  left: 0;
+.autodroup input {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+}
+.autodroup label {
+  background: #222322;
+  padding: 7px 35px 7px 12px;
+  border: 1.9px solid #3a3a3a;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  text-transform: capitalize;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.autodroup label::before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  display: block;
+  background: #000;
+  position: absolute;
+  right: 6px;
+  top: 10px;
+  font-family: "Font Awesome 6 Free";
+  border-radius: 50%;
+}
+.autodroup input:checked + label::before {
+  background: #fd0000;
+}
+.stakesradiodiv li {
+  display: block;
+  margin-bottom: 5px;
+}
+.filterfixdes .pokernav-item:hover .stakesradiodiv {
+  left: -83%;
+  opacity: 1;
+  z-index: 9;
+  visibility: visible;
+}
+.profile-menu {
+  border-radius: 2px;
+  width: 60px;
+  margin-right: ;
 }
 .pokerlobbymenu-des {
   width: 290px !important;
-}
-.pokertablemenu-des-open {
-  transform: translate(0);
-  opacity: 1;
-  visibility: visible;
 }
 .pokerlobbymenu-des button {
   font-size: 16px !important;
@@ -284,26 +345,6 @@ border: 1px solid #bcaf61 !important;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-.pokertablemenu-des button {
-  width: 100%;
-  color: #fff;
-  text-align: left;
-  padding: 4px 20px;
-  font-size: 28px;
-  font-weight: 500;
-  border-bottom: 1.9px solid #bcaf61 !important;
-  border-radius: 6px 6px 0 0;
-}
-.pokerlobbymenu-des button.landscape-block {
-  display: flex !important;
-}
-.pokertablemenu-des button img {
-  margin-right: 25px;
-}
-.profile-menu {
-  border-radius: 2px;
-  width: 60px;
 }
 .pokerlobbymenu-des .lobbyclose-btn {
   border: 0 !important;
@@ -320,25 +361,6 @@ border: 1px solid #bcaf61 !important;
   top: 5px;
   padding: 0;
 }
-.pokerMenu-list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.pokernav-item {
-  display: block;
-  color: #fff;
-  font-size: 18px;
-  border-bottom: 1.9px solid #464227;
-  padding: 8px 30px;
-  transition: all .4s linear;
-  position: relative;
-  cursor: pointer;
-}
-.pokernav-item i {
-  margin-right: 20px;
-  min-width: 24px;
-}
 .pokertablemenu-des .logout-lobbybtn {
   background: linear-gradient(#a91a27, #710e15);
   margin: 0px auto;
@@ -351,127 +373,466 @@ border: 1px solid #bcaf61 !important;
   text-transform: uppercase !important;
   padding: 5px 15px;
 }
-.pokernav-item img {
-  margin-right: 20px;
-  min-width: 24px;
+.pokerlobbymenu-des button.landscape-block {
+  display: flex !important;
 }
-.privateModal .modal-content {
-  background: #1f1200;
-  border: 1px solid #bcaf61;
+.pokerlobbymenu-des {
+  padding-top: 0 !important;
+  border: 1.9px solid #4ab74d !important;
 }
-.privateModal .modal-header {
+.bodyoverflow {
+  overflow-x: hidden !important;
+}
+.handBtn {
+  background: transparent;
+  border: 1px solid #008a31;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  padding: 10px;
+}
+.handpopup {
+  bottom: 65px;
+  left: 5px;
+}
+.borderFull {
+  border: 1.9px solid #008a31;
+  border-radius: 5px;
+}
+.handhistorybtn {
+  display: inline-block;
+  margin: 0px auto;
+  background: linear-gradient(#49aa4b, #356243);
+  border: 0;
+  font-size: 18px;
+  padding: 8px 10px;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+.hilotext {
+  background: #2a2c99;
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+.userlobby-modal {
+  display: inline-block;
+  margin: 0px auto;
+  bbac: ;
+  background: #235014;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.joinModalbtn {
+  width: 100%;
+  display: block;
+  border: 0;
+  background: #fd0c0c;
+  margin-top: 5px;
+  font-weight: 600;
+  border-radius: 25px;
   padding: 5px 15px;
-    padding-bottom: 5px;
-    padding-left: 15px;
-  padding-bottom: 8px;
-  padding-left: 22px;
 }
-.privateModal .modal-header {
-  position: relative;
+.modallobby {
+  width: auto;
+  display: inline-block;
+  text-align: center;
+  background: #306720;
+  padding: 10px 35px;
+  border-radius: 75px;
+  border: 2px solid #235014;
+}
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+  .dnone-deskdata {
+  display: none;
+}
+.header {
+  padding-left: 15px;
+}
+.playnow-btn {
+  padding-right: 38px;
+}
+.privateModal .modal-dialog {
+  max-width: 680px;
+}
+
+}
+@media (max-width:767px) {
+  .filterfixdes .pokernav-item {
+  padding: 10px;
+  font-size: 12px;
+}
+.pokertablemenu-des.filterfixdes-open {
+  width: 190px;
+}
+.stakesradiodiv {
+  width: 130px;
+}
+.filterfixdes .pokernav-item:hover .stakesradiodiv {
+  left: -70%;
+}
+.lobbytable-menu.backbtn i {
+  font-size: 28px;
+}
+.btn.pokertable-topbtn.me-3.lobbytable-menu {
+  margin-right: 5px !important;
+}
+
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .texasholdem-tabs .nav-tabs li button, .texasholdemTable thead tr th, .texasholdemTable tbody tr td {
+  font-size: 12px;
+}
+.texasholdem-tabs .nav-tabs li.tableFilter button img {
+  width: 18px;
+}
+.texasholdemTable tbody tr td .playnow-btn i {
+  width: inherit;
+  height: inherit;
+  font-size: 12px;
+  background: transparent !important;
+  color: #fff !important;
+  position: static;
+  padding: 0;
+}
+.playnow-btn {
+  min-width: inherit;
+  font-size: 12px;
+}
+.tablenumber-des p span {
+  padding-right: 10px;
+}
+
+}
+
+@media (max-width: 991px) {
+.flex-nowrap .w-auto {
+  min-width: inherit !important;
+}
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .setting-btn, .portrait-tab-text {
+    display: inherit;
+  }
+  .flex-nowrap .w-auto {
+  min-width: inherit !important;
+}
+.logo img {
+  width: 130px;
+}
+.profileDetails p, .backbtn i {
+  font-size: 12px;
+}
+.profileDetails p label, .profileDetails p span {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.profileUser {
+  width: 50px;
+  height: 50px;
+  border-color: #504581;
+}
+.backbtn {
+  padding: 0 4px;
+}
+.header {
+  padding: 8px;
+}
+.texasholdemTable tbody tr td::before {
+  content: attr(data-label);
+  position: absolute;
+  left: 0px;
+  bottom: 4px;
+  color: var(--maincolor);
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+}
+.texasholdemTable thead {
+  display: none;
+}
+.table-data-none {
+  display: none;
+}
+.texasholdemTable tbody tr td {
+  border: 1px solid #9e8f72;
+}
+.texasholdemTable tbody tr td .nlh-bg {
+  background: #756a1a;
+  font-size: 18px;
+  padding: 5px 18px;
+  border-radius: 6px;
+}
+.databefore-none::before {
+  display: none;
+}
+.texasholdemTable tbody tr td.usernamrtable {
+  font-size: 0;
+  width: 0;
+  height: 0;
+  padding: 0;
+  border: 0;
+}
+.usernamrtable span {
+  font-size: 16px;
+  position: absolute;
+  top: -13px;
+  color: #554993;
+  font-weight: 500;
+  background: #0a0a0a;
+  padding: 0 10px;
+  z-index: 1;
+  left: 25px;
+}
+.texasholdemTable tbody tr td {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 30px;
+  border-right: 0;
+  border-left: 0;
+  text-align: center;
+}
+.texasholdemTable tbody tr {
+margin-top: 15px;}
+.texasholdemTable {
+  border-collapse: separate;
+  border-spacing: 0 2em;
+}
+.texasholdemTable tbody tr td:first-child {
+  border-right: 2px dashed #9e8f72;
+  border-radius: 6px;
+  border-left: 1px solid #9e8f72;
+}
+.texasholdemTable tbody tr td.usernamrtable + td {
+  border-radius: 6px 0px 0 6px;
+}
+.playnow-btn i {
+  display: none;
+}
+.playnow-btn {
+  background: linear-gradient(to bottom, #c41824, #4c0e13);
+  border-radius: 0;
+  min-width: inherit;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 20px;
+  border-radius: 3px;
+}
+.texasholdemTable tbody tr td:last-child {
+  padding-bottom: 0;
+  border-right: 1px solid #9e8f72;
+  border-radius: 0 6px 6px 0;
+}
+.texasholdemTable {
+  padding: 0 15px;
+}
+.tableFilter {
+  display: none !important;
+}
+.header {
+  padding-bottom: 18px;
+  padding-right: 20px;
 }
 .userslash-btn {
   border: 0 !important;
   width: auto;
   height: auto;
 }
-.privateModal .modal-header h5 {
-  color: var(--maincolor);
-  font-size: 26px;
-  font-weight: 600;
+.userslash-btn i {
+  font-size: 21px;
+  color: #fff;
 }
-.privateModal .modal-header button.btn-close {
-  position: relative;
-  padding: 0;
-  width: 40px;
-  height: 40px;
-  opacity: 1;
-  background: #e91413;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.privateBtn {
+  padding: 0 8px;
+  border: 0;
+  text-transform: uppercase;
+  bottom: -17px;
+  border-radius: 0 0 6px 6px;
+  left: -13px;font-size: 10px;
 }
-.privateModal .modal-header button.btn-close i {
-  font-size: 22px;
+.setting-btn {
+  margin-left: 15px;
 }
-.privateModal .modal-body {
-  min-height: 320px;
+.tablenumber-des {
+  display: none;
+}
+.texasholdem-tabs .nav-tabs li button {
+  font-size: 0;
+}
+.texasholdem-tabs .nav-tabs li button {
+  border: 1.9px solid #504581 !important;
+  margin-right: 8px;
+  padding: 5px 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  min-width: 76px;
+}
+.portrait-tab-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+.texasholdem-tabs .nav-tabs li button.active {
+  border: 1.9px solid #9e8f72 !important;
+}
+.texasholdem-tabs .nav-tabs {
+  padding: 0 15px;
+}
+.texasholdem-tabs .nav-tabs li:nth-child(4) button {
+  margin-right: 0;
+}
+.profileDetails p {
+  border: 2px solid #504581;
+}
+.privateModal .modal-header {
+  border-bottom: 1.9px dashed #4ab74d;
+}
+.privateTableData.mt-3 {
+  display: none;
 }
 .joinplayDiv .w-auto {
   width: 100% !important;
   text-align: center;
   margin-bottom: 18px;
 }
-.joinplay-btn-hd {
-  font-size: 22px;
-}
-.joinplay-btninput {
-  background: #24252e;
-  padding: 15px 10px;
-  border-radius: 6px;
-}
 .joinplay-btninput {
   width: 100%;
-  background: #371202;
+  background: #1e0219;
   border: 0;
-}
-.joinplay-btn.mb-0 {
-  background: #66db1b;
-  border: 0;
-  font-weight: 600;
-  font-size: 22px;
-  padding: 8px 18px;
-  border-radius: 5px;
-  color: #2c511d;
 }
 .privatetable-create {
-  background: #ed1f20;
+  background: linear-gradient(#a91a27, #710e15);
   font-size: 14px;
   padding: 5px 6px;
   margin-left: 5px;
-  font-weight: 400;
-border-radius: 5px;
 }
-.privateModal .modal-header::before {
-  content: "";
-  display: block;
+.privateModal p {
+  font-size: 13px;
+}
+.joinplay-btn-hd span {
+  display: inline-block !important;
+}
+.texasholdemTable tbody tr td.nodataTd {
+  padding-bottom: 40px;
+border-radius: 6px;
+}
+
+}
+
+@media (max-width: 420px) and (orientation: portrait) {
+  .texasholdemTable tbody tr td::before, .texasholdemTable tbody tr td .nlh-bg, .texasholdemTable tbody tr td {
+    font-size: 12px;
+  }
+  .playnow-btn {
+  font-size: 12px;
+  padding: 6px 8px;
+}
+.header {
+  padding-bottom: 8px;padding-right: 8px;
+}
+.logo img {
+  width: 100px;
+}
+.backbtn {
+  margin-right: 0px !important;
+}
+.profileDetails p label, .profileDetails p span {
+  padding-right: 3px;
+  padding-left: 27px;
+}
+.logodiv {
+  margin-left: -15px;
+}
+
+}
+
+
+
+
+/* -------------Poker Table--------------- */
+
+.pokertable-container {
+  max-width: 850px !important;
+}
+.pokertable-topbtn {
+  border: 2px solid #439744;
+  padding: 4px 6px;
+  border-radius: 12px;
+}
+.pokertable-topbtn:hover {
+  background: #439744;
+}
+.pokertable-menu img {
+  transform: rotate(181deg);
+}
+a {
+  text-decoration: none;
+}
+.pokertablemenu-des {
+  background: #2a2d2b;
+  border: 1.9px solid #4ab74d;
+  border-radius: 8px 8px 2px 2px;
+  width: 235px;
+  transform: translate(-200%);
+  opacity: 0;
+  visibility: hidden;
+  transition: all .4s linear;
+  z-index: 999;
+}
+.pokertablemenu-des button {
   width: 100%;
-  height: 2px;
-  background: linear-gradient(to left, transparent, #371202, transparent);
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  color: #fff;
+  text-align: left;
+  padding: 4px 20px;
+  font-size: 28px;
+  font-weight: 500;
+  border-bottom: 1.9px solid #4ab74d !important;
+  border-radius: 6px 6px 0 0;
 }
-.userslash-btn i {
-  font-size: 22px;
+.pokertablemenu-des button:hover {
+  background:#4ab74d;
 }
-.settingpopup {
-  left: inherit;
-  right: 0;
-  transform: translate(200%);
+.pokertablemenu-des button img {
+  margin-right: 25px;
 }
-.settingpopup-open {
-  visibility: visible;
-  opacity: 1;
+.pokerMenu-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.pokernav-item {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  border-bottom: 1.9px solid #335334;
+  padding: 8px 30px;
+  transition: all .4s linear;
+  position: relative;
+  cursor: pointer;
+}
+.pokernav-item img, .pokernav-item i {
+  margin-right: 20px;
+  min-width: 24px;
+}
+.pokernav-item:hover {
+  background: #4ab74d;
+}
+.pokertablemenu-des-open {
   transform: translate(0);
-} 
-.settingpopup button {
-  padding: 4px 10px;
-  padding-right: 35px;
+  opacity: 1;
+  visibility: visible;
 }
-.settingpopup button i {
-  position: absolute;
-  right: 9px;
-  top: 2px;
-  padding: 8px 5px;
-}
-.settingpopup .pokernav-item {
-  padding: 12px 10px;
-  font-size: 14px;
-}
-.settingpopup .pokernav-item i {
-  margin-right: 3px;
-  color: #464227;
+.pokernav-item li:last-child a {
+  border-bottom: 0;
 }
 .switchToggle input[type="checkbox"] {
   height: 0;
@@ -485,14 +846,14 @@ border-radius: 5px;
   width: 60px;
   max-width: 70px;
   height: 25px;
-  background: #bcaf61;
+  background: #335334;
   display: inline-block;
   border-radius: 100px;
   position: relative;
   float: right;
 }
 .switchToggle input:checked + label {
-  background: #66dc18;
+  background: #4bb84d;
 }
 .switchToggle input + label::before, .switchToggle input + input + label::before {
   content: 'No';
@@ -504,7 +865,7 @@ border-radius: 5px;
   border-radius: 90px;
   transition: 0.3s;
   text-indent: 0;
-  color: #1f1200;
+  color: #2a2d2b;
   font-size: 14px;
 }
 .switchToggle label::after {
@@ -514,7 +875,7 @@ border-radius: 5px;
   left: 2px;
   width: 21px;
   height: 21px;
-  background: #1f1200;
+  background: #2a2d2b;
   border-radius: 90px;
   transition: 0.3s;
 }
@@ -534,913 +895,1044 @@ border-radius: 5px;
   left: calc(100% - 2px);
   transform: translateX(-100%);
 }
+.settingpopup .pokernav-item {
+  padding: 12px 10px;
+  font-size: 14px;
+}
+.settingpopup .pokernav-item:hover {
+  background: transparent;
+}
 .settingpopup button i {
   position: absolute;
   right: 9px;
   top: 2px;
   padding: 8px 5px;
-  font-size: 28px;
 }
-.rummylobbybody {
-  overflow-x: hidden;
+.settingpopup button {
+  padding: 4px 10px;
+  padding-right: 35px;
 }
-
-
-
-
-/* -------------Media Query-------------- */
-
-@media screen and (min-width: 1220px) {
-  .carddiv {
-  padding: 0 22px;
+.settingpopup {
+  left: inherit;
+  right: 0;
+  transform: translate(200%);
 }
-.header {
-  padding: 15px 30px;
+.settingpopup-open {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0);
 }
-
-}
-
-@media screen and (min-width: 767px) {
-  .card-row {
-  padding: 0 5px;
-}
-.points-btn, .btnsetting i {
-  font-size: 16px;
-}
-.points-btn {font-size: 22px;}
-.playersactive li {font-size: 18px;}
-.userprofile {
-  margin-right: 30px !important;
-  margin-left: 15px !important;
-}
-.carddiv {
-  margin-bottom: 10px;
-}
-.btnsetting:first-child {
-  margin-right: 10px;
-}
-
-}
-
-@media screen and (max-width: 991px) {
-  .privateModal p {
-  font-size: 13px;
-}
-  .carddiv {
-  width: 20%;
-}
-}
-@media screen and (max-width: 767px) {
-  .carddiv {
-  width: 33.3%;
-}
-.nav-tabs.playersdiv {
-  padding: 0 5px;
-  margin-bottom: 14px;
-}
-.pokertable-topbtn {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 0;
-  margin-right: 4px !important;
-  padding: 0;
-}
-.pokertable-topbtn i {
-  font-size: 18px;
-}
-
-}
-
-@media screen and (max-width: 580px) {
-  .points-btn {
-  min-width: inherit;
-  font-size: 12px;
-  padding: 3px 8px;
-  margin-right: 8px;
-}
-.points-btn::before {
-  display: none;
-}
-.playersactive li {
-  font-size: 10px;
-  padding: 5px 6px;
-}
-.userprofile p, .addcasebtn {
-  font-size: 12px;
-}
-.backbtn {
-  width: 22px;
-  height: 22px;
-  font-size: 16px;
-}
-.addcasebtn {
-  padding: 2px 3px;
-  margin-right: 5px !important;
-}
-.me-5 {
-  margin-right: 8px !important;
-}
-.userprofile img {
-  width: 30px;
-  height: 30px;
-}
-.addcasebtn i {
-  display: none;
-}
-.addcasebtn {
-  white-space: nowrap;
-}
-.btnsetting i {font-size: 21px;}
-.btnsetting {padding: 3px 4px;}
-.header{padding: 8px 5px;padding-bottom: 0;}
-.headerTop {
-  margin-bottom: 8px;
-}
-
-}
-
-@media screen and (max-width: 420px) {
-  .carddiv {
-    padding: 0 5px;
-  }
-  .cardcontent {
-  padding: 8px 4px;
-}
-.cardcontent .opentable {
-  font-size: 10px;
-}
-.playnow-btn {
-  font-size: 12px;
-}
-}
-
-
-/* ---------------------Lobby Css--------------------- */
-
-/*.lobbydiv {
-  background: #156935;
-  border: 10px solid #1c2522;
-  border-radius: 300px;
-  min-height: 300px;
-  box-shadow: 0 0 7px #000;
-  background: url('../img/table.png') no-repeat;
-}*/
-.lobbydiv {
-  min-height: 579px;
-  /*box-shadow: 0 0 7px #000;*/
-  background: url('../img/table.png') no-repeat;
-    background-position-x: 0%;
-    background-position-y: 0%;
-    background-size: auto;
+.pokertablegame {
+  background: url('../img/table_poker.png') no-repeat;
   background-size: cover;
   background-position: top center;
+  height: 400px;
 }
-.lobby-container {
-  max-width: 1250px;
-  margin: 0px auto;
-}
-.opencards {
-  padding: 2px 10px;
-  gap: 25px;
-}
-.cardslot2 {
-  gap: 25px;
-}
-.openpatti {
-  background: linear-gradient(to left, #590d11, #70161a);
-  border: 2px solid #360c08;
-  width: 44px;
-  font-size: 12px;
-  text-align: center;
-  padding: 8px 4px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 2px #000;
-}
-.finishslot p {
-  color: #95a89c;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-size: 22px;
-  letter-spacing: 1px;
-  text-align: center;
-}
-.finishslot {
-  background: #071f0f;
-  box-shadow: 0 0 10px #000;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 110px;
-  padding: 5px 10px;
-}
-.cards-patti img {
-  width: 100px;
-  margin-left: -60px;
-  border-radius: 6px;
-}
-.cardsalldiv {
-  gap: 10px;
-  margin-top: 70px;
-}
-.lobby-player img {
-  width: 65px;
-  height: 65px;
+.poker-user img {
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
-  border: 0px solid #737471;
-  box-shadow: none !important;
-  border-color: #fca836;
+  border: 3px solid #454544;
 }
-.lobby-player img {
-  position: relative;
-  z-index: 1;
-}
-.lobby-player p {
-  background: #362608;
-  font-size: 14px;
-  padding: 4px 4px;
-  border: 1px solid #84893f;
-  border-radius: 4px;
-  margin-top: -9px;
-  width: 100%;
-}
-.lobby-player strong {
-  width: 85px;
-  background: #043241;
-  display: block;
-  text-align: center;
-  margin: 0px auto;
-  font-size: 14px;
-  border-bottom: 1px solid #2a798c;
-  padding: 2px 2px;
-  border-radius: 0 0 4px 4px;
-  margin-top: -2px;
-}
-.lobby-player p {
-  border-radius: 0 4px 4px 0;
-  margin-left: -8px;
-  background: linear-gradient(to top, #fa9222, #ffe04d, #fff9b1);
-  width: auto;
-  min-width: inherit;
-  text-align: left;
-  font-size: 16px;
-  color: #000;
-  margin-top: 0;
-  margin-bottom: 0;
-  border: 0px solid #ffcd7a;
-  padding: 4px 15px 1px 16px;
-  border-color: #fca836;
-}
-.lobby-player p span {
-  font-size: 16px;
-  font-weight: 800;
-  margin-top: 1px;
-  color: #000;
-}
-.d-block {
-  display: block;
-}
-.lobby-player {
-  width: 100px;
-  text-align: center;
-}
-.lobby-player {
-  display: flex;
-  align-items: center;
-}
-.lobby-player {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0px auto;
-  top: -35px;
-}
-.lobbydiv {
-  padding: 90px 100px;
-  z-index: 1;
-}
-.lobby-player-bottom p {
-  width: auto;
-  min-width: 100px;
-  margin-right: -11px;
-}
-.lobby-player-bottom strong {
+.poker-user p {
   margin: 0;
-  width: auto;
-  min-width: 60px;
-  margin-left: -7px;
-  border: 1px solid #2a798c;
-  border-radius: 4px;
-  padding: 4px 4px;
+  background: #1b1c1b;
+  font-size: 16px;
+  color: #838383;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin-top: 3px;
 }
-.lobby-player-bottom p {
-  margin-top: 0;
+.poker-user {
+  left: 28%;
+  top: -6px;
 }
-.lobby-player-bottom img {
-  position: relative;
-  z-index: 1;
+.poker-user-1 {
+  left: inherit;
+  right: 28%;
 }
-.lobby-player-bottom {
-  bottom: -60px;
+.poker-user-2 {
+  top: 51%;
+  left: -30px;
+}
+.poker-user-3 {
+  top: 51%;
+  left: inherit;
+  right: -75px;
+}
+.poker-user-4 {
   top: inherit;
-  width: auto;
-  justify-content: center;
-}
-.lobby-player.lobby-player-right {
+  bottom: -30px;
+  left: 0;
   right: 0;
-  left: inherit;
 }
-.lobby-player.lobby-player-right.lobby-player-right1 {
-  top: 43%;
-  right: 45px;
+.poker-user-active img {
+  border-color: #008a31;
+  width: 60px;
+  height: 60px;
 }
-.lobby-player.lobby-player-left {
-  left: 0px;
-  right: inherit;
-  top: 100px;
-}
-.lobby-player.lobby-player-left.lobby-player-left1 {
-  top: 43%;
-  left: 0px;
-}
-.autodroup input {
-  position: absolute;
-  visibility: hidden;
-  opacity: 0;
-}
-.autodroup label {
-  background: linear-gradient(to top, #fa9222, #ffe04d, #fff9b1);
-  padding: 10px 12px 10px 35px;
-  border: 0px solid #f5e1aa;
-  border-radius: 4px;
-  position: relative;
-  cursor: pointer;
-  text-transform: uppercase;
-  color: #000;
-}
-.autodroup label::before, .autodroup input:checked ~ label::after {
-  content: "";
-  display: block;
-  width: 20px;
-  height: 20px;
-  display: block;
+.poker-user-active p {
   background: #000;
-  position: absolute;
-  left: 6px;
-  top: 8px;
-  font-family: "Font Awesome 6 Free";
-  border-radius: 50%;
+  border: 2px solid #008a31;
 }
-.autodroup input:checked + label::after {
-  background: #c20102;
-  width: 12px;
-  height: 12px;
-  top: 12px;
-  left: 10px;
+.fold-btn label {
+  cursor: pointer;
+  background: #03200d;
+  border: 1px solid #1d801d;
+  padding: 4px 15px;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-left: 55px;
+  position: relative;
 }
-.autodroup {
-  position: absolute;
-  display: block;
-  bottom: -21px;
-  left: 70px;
-}
-.rummyPoint {
-  font-size: 14px;
-  position: absolute;
-  right: 0;
-  top: -15px;
-  left: 0;
-  margin: 0px auto;
-  text-align: right;
-  padding-right: 22%;
-}
-.pro-loader {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  border: 3px solid #737471;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1;
-}
-.pro-loader:before
-{
-  content:'';
-  position:absolute;
-  top:-3px;
-  left:-3px;
-  width:100%;
-  height:100%;
-  border:3px solid transparent;
-  border-top:3px solid #fca836;
-  border-right:3px solid #fca836;
-  border-radius:50%;
-  animation:animateC 2s linear infinite;
-}
-.pro-loader span
-{
-  display:block;
-  position:absolute;
-  top:calc(50% - 2px);
-  left:50%;
-  width:50%;
-  height:4px;
-  background:transparent;
-  transform-origin:left;
-  animation:animate 2s linear infinite;
-}
-.pro-loader span:before
-{
-  content:'';
-  position:absolute;
-  width:12px;
-  height:12px;
-  border-radius:50%;
-  background:#fca836;
-  top:-6px;
-  right:-6px;
-  box-shadow:0 0 20px #fca836;
-}
-@keyframes animateC
-{
-  0%
-  {
-    transform:rotate(0deg);
-  }
-  100%
-  {
-    transform:rotate(360deg);
-  }
-}
-@keyframes animate
-{
-  0%
-  {
-    transform:rotate(45deg);
-  }
-  100%
-  {
-    transform:rotate(405deg);
-  }
-}
-.pro-loader {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  background: rgba(0,0,0, 0.4);
-}
-.lobbydiv img {
-  box-shadow: 0 0 6px #000;
-}
-.lobbydiv::before {
+.fold-btn label::before {
   content: "";
-  display: none;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  border-radius: 300px;
-  box-shadow: 0 0 5px #9f9f9f;
-  z-index: -1;
-}
-.playerpointfix {
-  position: fixed;
-  top: 40%;
-  transform: rotate(90deg);
-  right: -70px;
-}
-.lobby-player.lobby-player-right {
-  right: 45px;
-  left: inherit;
-  top: 100px;
-}
-
-.btnsetting {
-  background: linear-gradient(to top, #fa9222, #ffe04d, #fff9b1);
+  display: block;
   width: 45px;
   height: 45px;
-  border-radius: 50%;
+  border: 1px solid #1d801d;
+  position: absolute;
+  left: -5px;
+  top: -8px;
+  background: #000;
+  border-radius: 3px;
+  display: flex;
+align-items: center;
+justify-content: center;
+font-size: 30px;
 }
-.btnsetting i {
-  color: #000;
+.fold-btn input:checked + label::before {
+  content: " ✓";
 }
-.cards-patti img:first-child {
-  margin: 0;
+.fold-btndiv {
+  gap: 25px;
 }
-.winpoint {
-  margin-right: 20px;
-  background: linear-gradient(to top, #fa9222, #ffe04d, #fff9b1);
-  padding: 5px 8px;
+.pot-point strong {
+  font-size: 22px;
+  word-spacing: 5px;
+  font-weight: 600;
+}
+.pot-point p {
+  display: inline-block;
+  background: #000;
+  font-size: 16px;
+  padding: 3px 5px;
+  min-width: 100px;
+  text-align: center;
   border-radius: 25px;
+  margin-top: 15px;
+}
+.pot-point p img {
+  width: 50px;
+  position: absolute;
+  left: -24px;
+  top: -12px;
+}
+.chips-point p {
+  font-size: 16px;
+  font-weight: 600;
+}
+.chips-point img {
+  margin-right: 5px;
+}
+.chips-point {
+  bottom: 23%;
+  left: -10%;
+  right: 0;
+  margin: 0px auto;
+  text-align: center;
+  display: inline-block;
+}
+.chips-point-1 {
+  left: inherit;
+  right: 11%;
+  bottom: 30%;
+}
+.pokeruserid {
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: -30px;
+  color: #fff;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.poker-table-body {
+  padding: 82px 0;
+  height: 100%;
+}
+.texasholdem-text {
+  position: absolute;
+  bottom: 32%;
+}
+.usercards img {
+  border: 0;
+  width: 46px;
+  height: inherit;
+  border-radius: 0;
+  margin-left: -24px;
+}
+.usercards span {
+  width: 100%;
+  text-align: center;
+  color: #f8f800;
+  background: #000;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 3px 5px;
+  letter-spacing: 1px;
+}
+.usercards {
+  border: 2px solid #008a31;
+  border-radius: 5px;
+  background: #000;
+  padding: 10px 8px;
+}
+.poker-user {
+  z-index: 1;
+}
+.usercardsDiv p {
+  width: 86%;
+  text-align: center;
+  margin: 0px auto;
+  border-top: 0;
+  border-radius: 0 0 5px 5px;
+  color: #01f400;
+  font-size: 12px;
+  font-weight: bold;
+}
+.poker-user-active p {
+  font-size: 14px;
+}
+.usertablepoint {
+    color: #01f400;
+  font-size: 12px;
+  margin-top: -6px;
+}
+.usercards span.userpointrgba {
+  background: rgba(0,0,0, 0.7);
+}
+.callraise-btn {
+  background: linear-gradient(#d31d1d, #921010,#ce2020);
+  color: #fff;
+}
+.callraise-btn {
+  background: linear-gradient(#d31d1d, #921010,#ce2020);
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 5px 15px;
+  margin-right: 8px;
+}
+.callraise-btn span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.potmax-btn {
+  background: linear-gradient(#165ddb, #0b45b2,#165ddb);
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 5px 15px;
+  margin-right: 6px;
+  min-width: 100px;
+}
+.potmax-btn:hover {
+  background: linear-gradient(#142a55, #102349,#142a55);
+}
+.progreshnumber {
+  border: 4px solid #316cdf;
+  background: linear-gradient(#142a55, #102349,#142a55);
+  padding: 1px 5px;
+  text-align: center;
+  min-width: 100px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+.plush-btn {
+  background: linear-gradient(#4bc851, #067f1c,#4bc851);
+  font-size: 30px;
+  padding: 0 8px;
+  border-radius: 2px;
+  width: 35px;
+  height: 36px;
+  color: #fff;
+  font-weight: 600;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
-.winpoint i {
-  background: #000;
+.progreshbar-poker {
+  width: 65%;
+  height: 15px;
+  background: #0b0e0b;
+  border-radius: 25px;
+  box-shadow: 0 0px 6px #454544;
+  margin: 0 10px;
+}
+.progresh-arrow {
+  width: 38px;
+  top: -3px;
+  left: -2px;
+}
+.chat-btn {
+  border: 2px solid #008a31;
+  background: transparent;
+  border-radius: 10px;
+  background: #2a2c2b;
+  padding: 5px;
+}
+.chat-btn img {
+  width: 35px;
+}
+.chat {
+  position: fixed;
+  bottom: 140px;
+  right: 11px;
+  z-index: 99;
+}
+.chat-tabs {
+  background: linear-gradient(#1f1f1f,#080808);
+}
+.chat-tabs li button {
+  background: transparent;
+  border-right: 1px solid #232523 !important;
+  background: transparent !important;
+  border-top: 0px !important;
+  border-left: 0px !important;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid transparent !important;
+}
+.chat-tabs li button.active {
+  border-bottom: 2px solid #4ab34c !important;
+}
+.chat-tabs li:last-child button {
+  border-right: 0px !important;
+}
+.chatbox {
+  border: 2px solid #4ab34c;
+  background: linear-gradient(#1f1f1f,#080808);
+  border-radius: 2px;
+  width: 295px;
+}
+.chatbox p {
+  margin-bottom: 15px;
+}
+.chatbox .tab-content {
+  padding: 10px;
+  min-height: 161px;
+}
+.chat-tabs li {
+  width: 33.3%;
+}
+.chatbox {
+  right: 0;
+  bottom: 0;
+  transform: translate(200%);
+  transition: all .4s linear;
+}
+.chatnow-btn button {
+  background: #4ab34c;
+  border: 0;
+  font-weight: 500;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+.chatnow-btn input {
+  width: 76%;
+  margin-right: 5px;
+  background: #fff;
+  border: 0;
+  color: #000;
+  border-radius: 2px;
+  outline: none;
+  padding: 5px;
+  font-size: 14px;
+}
+.chatbox-open {
+  right: 58px;
+  transform: translate(0);
+}
+.buyin-modal .modal-content {
+  background: #2a2c2b;
+  border: 2px solid #008a31;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.buyin-modal .modal-content .modal-header, .buyin-modal .modal-content .modal-footer {
+  border-color: #008a31;
+}
+.buyin-modal .modal-body h6 {
+  font-size: 22px;
+  margin-bottom: 35px;
+}
+.modal-progres {
+  background: linear-gradient(#46a64b, #386c46);
+  height: 35px;
+  border-radius: 25px;
+  position: relative;
+  padding: 5px 10px;
+  align-items: center;
+}
+.modal-progres .progress-bar {
+  width: 100%;
+  border-radius: 25px;
+  background: #2a2c2b;
+  position: relative;
+  overflow: visible;
+  height: 18px;
+}
+.modal-progres .progress-bar::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: linear-gradient(#46a64b, #386c46);
+  position: absolute;
+  left: 0;
+  box-shadow: 0px 0px 2px #000;
+  border: 2px solid #77ac7e;
+  top: -4px;
+}
+.modalvalueadd {
+  border: 2px solid #008a31;
+  background: transparent;
+  text-align: center;
+  width: 115px;
+  outline: none;
+  border-radius: 2px;
+  color: #ff0;
+  font-weight: 600;
+  padding: 3px 5px;
+  margin-left: 15px;
+}
+.modalon-btn {
+  background: linear-gradient(#46a64b, #386c46);
+  border: 0;
+  color: #fff;
+  font-weight: 500;
+}
+.modalon-btn {
+  background: linear-gradient(#46a64b, #386c46);
+  border: 0;
+  color: #fff;
+  font-weight: 500;
+  min-width: 90px;
+  padding: 4px 5px;
+  border-radius: 10px;
+}
+.modaltimer i {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+.modaltimer {
+  font-size: 18px;
+  margin: 0 30px;
+}
+.buyin-modal .modal-content .modal-header h5 {
+  font-size: 26px;
+}
+.buyin-modal .modal-content .modal-header {
+  padding: 2px 5px;
+}
+.portrait-block {
+  display: none !important;
+}
+.upcoming-text {
+  font-size: 10px;
+  color: #cece09;
+  display: block;
+  text-align: right;
+  text-transform: capitalize;
+  margin-top: -3px;
+}
+.pokernav-item:hover .upcoming-text {
+  color: #fff;
+}
+.userCardsmain {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  top: 0;
+  bottom: 0;
+}
+.settingpopup .pokernav-item i {
+  margin-right: 3px;
+  color: #335334;
+}
+.portrait-rang-btndiv {display: none !important;}
+.pokertable-topbtn.settingspopup {
+  padding: 7px;
+}
+
+
+
+
+
+
+@media screen and (min-width: 992px) {
+  .fold-btn label {
+    min-width: 180px;
+  }
+}
+
+@media (max-width: 1140px) {
+  .pokertable-container {
+  max-width: 940px !important;
+}
+.pokertablegame {
+  height: 440px;
+}
+.poker-user-3 {right: 0;}
+.potmax-btn {
+  min-width: inherit;
+}
+.chips-point-1 {bottom: 55%;}
+
+}
+
+@media (max-width: 991px) {
+  .pokertable-container {
+  max-width: 730px !important;
+}
+.pokertablegame {
+  height: 350px;
+}
+.usercards img {
+  width: 30px;
+  margin-left: -15px;
+}
+.usercards span {
+  font-size: 14px;
+  top: inherit !important;
+  bottom: 0;
+}
+
+}
+
+@media (max-width: 767px) and (orientation: landscape) {
+  .pokertable-container {
+  max-width: 450px !important;
+}
+.pokertablegame {
+  height: 210px;
+}
+.poker-user img {
+  width: 30px;
+  height: 30px;
+}
+.poker-user p, .chips-point p {
+  font-size: 11px;
+}
+.pot-point strong {
+  font-size: 14px;
+}
+.poker-table-body {
+  padding: 45px 0;
+}
+.pot-point p img {
+  width: 30px;
+  position: absolute;
+  left: -10px;
+  top: -2px;
+}
+.pot-point p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.usercards {
+  padding: 5px 3px;
+}
+.texasholdem-text {
+  font-size: 12px;
+}
+.chips-point img {
+  width: 10px;
+}
+.callraise-btn {
+  font-size: 12px;
+  padding: 2px 8px;
+  margin-right: 5px;
+}
+.potmax-btn {
+  font-size: 12px;
+  padding: 4px 8px;
+  margin-right: 3px;
+}
+.progreshnumber {
+  min-width: inherit;
+}
+.plush-btn {
+  font-size: 22px;
+  width: 22px;
+  height: 22px;
+}
+.poker-user-3 {
+  right: -40px;
+}
+.portrait-rang-btn {
+    display: none !important;
+  }
+
+}
+
+
+@media (min-width: 767px) {
+  .portrait-rang-btn {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+
+.landscape-block {
+  display: none !important;
+}
+  .portrait-block {
+  display: block !important;
+}
+/*.pokertable-portrait, html {
+  background: linear-gradient(#2e2f2a, #070906) !important;
+}*/
+.pokertable-topbtn i {
+  color: #3fad57;
   font-size: 20px;
+}
+.pokertable-topbtn {
+  border-width: 1px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: 3px 0px 1px #000;
+}
+.pokertable-topbtn:hover i {
+  color: #fff;
+}
+.cardsup-btn {
+  border-radius: 25px !important;
+  width: auto;
+  height: auto;
+  min-width: 60px;
+  min-height: 30px;
+  margin-left: 8px;
+  color: #fff;
+}
+.pokertablegame {
+  background: url('../img/portrait.png') no-repeat;
+  background-position: top center;
+  background-size: cover;
+  height: 755px;
+}
+.poker-user {
+  left: 0%;
+  top: 20%;
+}
+.poker-user.poker-user-1 {
+  left: inherit;
+  right: 0%;
+}
+.poker-user.poker-user-2 {
+  top: inherit;
+  bottom: 30%;
+}
+.poker-user.poker-user-3 {
+  right: 0%;
+  left: inherit !important;
+  bottom: 30%;
+  top: inherit !important;
+}
+.pokertable-container {
+  max-width: 480px !important;
+}
+.callbtn-portrait {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 0;
+}
+.callbtn-portrait .w-100.d-flex {
+  gap:6px;
+}
+.callraise-btn {
+  margin: 0;
+  width: 33%;
+}
+.callraise-btn {
+  margin: 0;
+  width: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #bd2929 !important;
+  border-radius: 0;
+  font-size: 18px;
+}
+.callraise-btn:nth-child(2) {
+  background: #057e51 !important;
+}
+.callraise-btn:nth-child(3) {
+  background: #9c8910 !important;
+}
+.callraise-btn span {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 15px;
+}
+.texasholdem-text {
+  position: absolute;
+  bottom: 16%;
+  width: 200px !important;
+  left: 0;
+  right: 0;
+  margin: 0px auto;
+  color: #7ab38d;
+}
+.pokertablemenu-des {
+  position: fixed !important;
+  left: 0;
+  border-radius: 0;
+  height: 100%;
+  border: 0;
+}
+.pokerMenu-list-portrait {
+  list-style: none;
+  padding: 0;
+}
+.pokertablemenu-des {
+  background: #111312;
+  width: 250px;
+  padding-top: 40px;
+}
+.pokerMenu-list-portrait li a i {
+  background: #313133;
   width: 35px;
   height: 35px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 14px;
+  margin-right: 8px;
+  transition: all .4s linear;
 }
-.winpoint p {
+.pokerMenu-list-portrait li a {
+  color: #ffff;
+  font-size: 16px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  transition: all .4s linear;
+}
+.pokerMenu-list-portrait li a:hover {
+  color: #3fad57;
+}
+.pokerMenu-list-portrait li a:hover i {
+  background: #3fad57;
+  color: #fff; 
+}
+.poker-user.poker-user-4 {
+  top: inherit;
+}
+.gameplay-card {
+  left: 18%;
+  top: 40%;
+}
+.progressbar-portrait {
+  width: 300px !important;
+  transform: rotate(-90deg);
+  position: absolute;
+  bottom: 0;
+  z-index: 9;
+  background: #101010;
+  border: 5px solid #53556a;
+  height: 90px;
+  border-radius: 5px;
+}
+.progressbar-portrait button {
+  position: absolute;
+  top: 0;
+  left: 88%;
+  height: 40px;
+  border-radius: 0;
+  background: #101010;
+  color: #ac9d06;
+  border: 1px solid #53556a !important;
+  border-left: 5px solid #53556a !important;
+}
+.progressbar-portrait button:last-child {
+  left: inherit;
+  right: 0;
+  top: 40px;
+}
+.progreshbar-poker {
+  width: 75%;
+  height: 22px;
+  background: #0b0e0b;
+  border-radius: 25px;
+  margin: 0 10px;
+  border: 4px solid #53556a;
+  border-right: 18px solid #53556a;
+  box-shadow: none;
+  position: relative;
+}
+.progreshbar-poker::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #0b0e0b;
+  position: absolute;top: 0;
+  left: 5px;
+  border-radius: 25px;
+
+}
+.progreshnumber {
+  display: none;
+}
+.chat-btn {
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+}
+.chat-btn img {
+  width: 25px;
+}
+.chips-point {
+  background: rgba(0,0,0, 0.4);
+  padding: 0px 10px;
+  border-radius: 25px;
+  text-align: center;
+  width: 60px;
+  padding-left: 20px;
+}
+.chips-point p {
+  position: relative;
+}
+.chips-point p img {
+  margin: 0;
+  position: absolute;
+  left: -27px;
+  width: 25px;
+}
+.chips-point {
+  bottom: 11%;
+  left: -28px;
+}
+.chips-point-1 {
+  bottom: 36%;
+  right: 32%;
+}
+.cardsupsecond-btn {
+  background: linear-gradient(#034901,#0a7d08,#034901);
+  width: 95px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 3px 10px #000;
+}
+.cardsupsecond-btn span {
   background: #000;
-  text-transform: uppercase;
-  height: 35px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  font-size: 11px;
+  text-align: center;
+  padding: 1px 2px;
+}
+.usercards {
+  border: 0;
+  background: transparent;
+  padding: 0;
+}
+.usercards span, .poker-user-active p {
+  display: none;
+}
+.usercards img {
+  width: 50px;
+  margin-left: -25px;
+}
+.portrait-rang {
+  width: 100px;
+  border: 5px solid #4b5063;
+  border-radius: 6px;
+  z-index: 99;
+  bottom: 0;
+  background: #121212;
+  padding-bottom: 10px;
+}
+.portrait-rang button {
+  width: 50%;
+  color: #ad9d0c;
+  font-size: 35px;
+  padding: 0;
+  text-align: center;
+  height: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 0;
+  border: 1px solid #4b5064 !important;
+  border-bottom: 5px solid #4b5064 !important;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.portrait-rang button:first-child {
+  border-right: 0 !important;
+}
+.portrait-rang-slide {
+  border: 5px solid #4b5064;
+  height: 300px;
+  width: 28px;
+  background: #101010;
   border-radius: 25px;
-  margin-left: 8px;
-  padding: 2px 22px;
-}
-.winpoint p strong, .winpoint p span {
-  font-size: 16px;
-  font-weight: 600;
-  font-family: 'Montserrat', sans-serif;
-}
-.winpoint p span {
-  padding-left: 15px;
-  color: #ffde00;
-}
-.winpoint .profileimage {
-  width: 40px;
-  height: 40px;
-  background: #3b2400;
-  border-radius: 50%;
-  padding: 2px;
-}
-.header {
-  margin-bottom: 14px;
-}
-body {
-  background: url('../img/bg1.png') no-repeat !important;
-  background-color: rgba(0,0,0, 0.6) !important;
-  background-blend-mode: overlay;
-  background-size: cover !important;
-  padding-bottom: 50px;
-}
-.card-rotate {
-  transform: rotate(-90deg);
-}
-.card-rotate {
-  transform: rotate(-90deg);
-  position: absolute;
-  left: -40px;
-  z-index: -1;
-}
-.position-absolute {
-  position: absolute;
-}
-.discard-btn {
-  background: linear-gradient(to bottom, #c40102, #850201);
-  border: 0;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
-  padding: 6px 6px;
-  border-radius: 3px;
-  top: -41px;
-  right: 0;
-}
-.declarediscard-btn .discard-btn {
-  font-size: 18px;
-  font-weight: 600;
-  padding: 12px 17px;
-}
-.discard-btn.declare-btn {
-  background: linear-gradient(to bottom, #0bbe0a, #068807);
-}
-.declarediscard-btn {
-  position: absolute;
-  bottom: -35px;
-  right: 0;
-}
-.discard-btn.declare-btn {
-  margin-right: 15px;
-}
-.group-btn {
-  background: linear-gradient(to bottom, #01bd9d, #009c82);
-}
-.discard-btn ~ .group-btn {
-  margin-left: 15px;
-}
-.lobby-player-active img {
-  border: 5px solid #fa9d28;
-  width: 95px;
-  height: 95px;
-}
-.openpatti-modalbg {
-  background: rgba(0,0,0, 0.6);
-  border-radius: 6px;
-  padding: 10px;
-  padding-bottom: 5px;
-}
-.cardpatti-row {
-  gap: 5px;
-}
-.cardpatti-row img {
-  width: 30px;
-}
-.openpatti-modal-close {
-  background: linear-gradient(to bottom, #c40102, #850201);
-  border: 0;
-  padding: 2px 8px;
-  border-radius: 2px;
-  box-shadow: 0 0 2px #000;
-  position: absolute;
-  right: -31px;
-  top: 0;
-}
-.openpatti-modal {
-  position: absolute;
-  top: 0;
-  transition: all .4s linear;
-  left: -133px;
-  z-index: -1;
-  opacity: 0;
-  visibility: hidden;
-}
-.openpatti-modal-open {
-  left: 0;
-  z-index:1;
-  opacity: 1;
-  visibility: visible;
-}
-.activeCards {
+  text-align: center;
+  margin: 0px auto;
+  border-top: 25px solid #4b5064;
   position: relative;
-  top: -8px
 }
-.lobby-player-bottom.lobby-player-active p {
-  width: auto;
-  font-size: 18px;
-  padding: 4px 12px;
-  border-radius: 25px;
-  margin: 0;
-  margin-right: -18px;
-  padding-right: 24px;
-}
-.lobby-player-bottom.lobby-player-active span {
-  background: linear-gradient(to top, #fa9222, #ffe04d, #fff9b1);
-  font-size: 18px;
-  padding: 4px 20px;
-  margin-left: -18px;
-  padding-left: 30px;
-  border-radius: 25px;
-  color: #000;
-  font-weight: 600;
-  text-align: left;
-}
-.cardpatti-row {
-  margin-bottom: 5px;
-}
-.scroller {
-  scrollbar-color: rgba(0,0,0, 0.6) rgba(0,0,0, 0.6);
-  scrollbar-width: thin;
-}
-
-.scroller::-webkit-scrollbar {
-  background: white;
-  scrollbar-width: thin;height: 2px;
-    width: 4px;
-}
-
-.scroller::-webkit-scrollbar-thumb {
-  background: #fff;
-}
-.openpatti-modalbg {
-  overflow: auto;
-  height: 167px;
-}
-.rummyPoint p {
-  background: #1a5726;
-  display: inline-block;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 4px;
-}
-.navbar-menu li {
-  list-style: none;
-  display: block;
-}
-a {
-  text-decoration: none;
-}
-.navbar-menu {
-  padding: 0;
-  width: 100%;
-}
-.menuDiv {
-  padding: 0;
-  width: 100%;
-  background: linear-gradient(to top, #fa9222, #ffe04d, #fff9b1);
-  padding: 15px;
-  width: 130px;
-  left: -30px;
-  position: absolute;
-  z-index: 999;
-top: 60px;
-border-radius: 5px;
-opacity: 0;
-visibility: hidden;
-display: none;
-}
-.navbar-menu {width: 100%;padding: 0;}
-.navbar-menu li .nav-item-menu {
-  color: #000;
-  display: block;
-  padding: 5px 0;
-  font-size: 14px;
-  font-weight: 600;
-}
-.navbar-menu li:first-child .nav-item-menu {
-  padding-top: 0;
-}
-.navbar-menu li:last-child .nav-item-menu {
-  padding-bottom: 0;
-}
-.menuDiv::before {
+.portrait-rang-slide::before {
   content: "";
   display: block;
-  border: 10px solid #fff49e;
+  width: 100%;
+  height: 100%;
+  background: #101010;
   position: absolute;
-  border-left-color: transparent;
-  border-bottom-color: transparent;
-  transform: rotate(-45deg);
-  top: -7px;
-  right: 4px;
-  border-radius: 2px;
+  left: 0;
+  top: -8px;
+  border-radius: 25px;
 }
-.menuDivOpen {
-  opacity: 1;
-  visibility: visible;
-  display: block;
+.portrait-rang-slide img {
+  left: -15px;
+  bottom: 0;
+  max-width: 50px;
 }
-.cardoverlay {
-  margin-right: -80px;
+.portrait-rang-btn button {
+  background: #101010 !important;
+  border-radius: 0;
+  width: 100%;
+  border: 2px solid #535669 !important;
+  margin-bottom: 8px;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 5px;
+  text-transform: uppercase !important;
 }
-
-
-
-
-
-
-
-
-@media screen and (max-width: 1300px) {
-  .lobby-container {
-  max-width: 100%;
-  padding: 0 45px;
+.portrait-rang-btndiv {
+  position: fixed;
+  bottom: 40px;
+  display: flex !important;
+  align-items: center !important;
+  right: 6px;
+  z-index: 999;
 }
-
-}
-
-@media screen and (max-width: 1220px) {
-  .cards-patti img {
-    width: 60px;
-    margin-left: -30px;
-  }
-  .opencards img {
+.portrait-rang-btn {
   width: 50px;
+  margin-left: -3px;
 }
-.lobbydiv {
-  height: 425px;
-  min-height: inherit;
-}
-.lobby-container {
-  max-width: 1015px;
-}
-.rummyPoint {
-  padding-right: 12%;
-}
-
-}
-
-@media screen and (max-width: 991px) {
-  .cards-patti img {
-  margin-left: -51px;
-}
-.lobbydiv img, .cards-patti img {
-  width: 50px;
-}
-.lobby-player img {
-  width: 40px;
-  height: 40px;
-}
-.pro-loader {
-  width: 40px;
-  height: 40px;
-  left: -1px;
-  top: 0px;
-}
-.finishslot {
-  width: 60px;
-}
-.finishslot p {
-  font-size: 18px;
-}
-/*  ---------------------------------    */
-.lobbydiv {
-  height: 325px;
-  min-height: inherit;
-  padding: 40px 15px;
-}
-.lobby-player p, .lobby-player p span, .finishslot p, .lobby-player-bottom.lobby-player-active p, .lobby-player-bottom.lobby-player-active span, .autodroup label {
-  font-size: 12px;
-}
-.lobby-player p {
-  padding: 1px 5px;
-  padding-left: 12px;
-}
-.cardoverlay {
-  margin-right: -35px;
-}
-.declarediscard-btn .discard-btn, .discard-btn {
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 5px;
-}
-.discard-btn.declare-btn, .discard-btn ~ .group-btn {
+.visitor {
   margin: 0;
+  min-height: 150px;
+  border: 1px solid #008a31;
+  border-radius: 6px;
 }
-.lobby-player.lobby-player-left.lobby-player-left1, .lobby-player.lobby-player-right.lobby-player-right1 {
-  top: 50%;
+.buyin-modal .modal-content .modal-footer h6 {
+  font-size: 22px;
 }
-.winpoint .profileimage {
-  width: 30px;height: 30px;
+.realtimeresult-modal thead {
+  border-bottom: 1px solid #008a31;
 }
-.winpoint p strong, .winpoint p span {font-size: 12px;}
-.winpoint p {
-  height: auto;
-  padding: 8px 8px;
+.realtimeresult-modal tbody tr td {
+  font-size: 14px;
 }
-.lobby-container {width: 768px;}
+.close-btn {
+  border: 0;
+  background: #f40403;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+}
+.close-btn i {
+  font-size: 26px;
+  position: relative;
+  top: -2px;
+}
+.realtimeresult-modal .modal-header {
+  padding: 10px 10px !important;
+}
+.callbtn-portrait {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 0;
+  left: 0;
+  padding: 0 15px;
+}
+.texasholdem-text {
+  top: 8%;
+  bottom: inherit;
+  font-size: 12px;
+}
+.portrait-rang-btndiv {display: none !important;}
+.portrait-rang-btndiv-block {
+  display: flex !important;
+}
+
+
+}
+
+
+@media (max-width: 520px) and (orientation: portrait)  {
+  .pokertable-container {
+  max-width: 300px !important;
+}
+.pokertablegame {
+  height: 450px;
+}
+.poker-user {
+  left: -8%;
+}
+.poker-user.poker-user-1 {
+  left: inherit;
+  right: -8%;
+}
+.poker-user p {
+  font-size: 12px;
+}
+.poker-user-active img {
+  border-color: #008a31;
+  width: 50px;
+  height: 50px;
+}
+.usercards img {
+  width: 35px;
+  margin-left: -15px;
+}
+.gameplay-card img {
+  width: 35px;
+}
+#handhistoryModal .row .d-flex img.w-100, #handModal .row .d-flex img.w-100 {
+    width: 32px !important;
+}
 
 
 }
 
-@media (max-width: 767px) {
-  .lobbydiv {
-    height: 230px;
-  }
-  .lobby-player.lobby-player-left, .lobby-player.lobby-player-right {top: 30px;}
-  .card-rotate {margin-left: 32px;}
-  .lobby-player img {
-    width: 40px !important;height: 40px !important;
-  }
-  .lobby-player.lobby-player-right, .lobby-player.lobby-player-right.lobby-player-right1 {
-    right: 21px;
-  }
-  .cards-patti img {
-    margin-left: -15px;
-  }
-  .cardsalldiv {
-    gap:6px !important;
-    margin-top: 49px;
-  }
-  .autodroup {
-    left: 0;
-  }
-  .rummyPoint p, .winpoint .profileimage {
-    font-size: 12px;
-    display: none;
-  }
-  .winpoint {
-  margin-right: 5px;
-}
-.winpoint p {margin-left: 0;}
-.backbtn i {font-size: 12px;}
-.lobby-player {
-  top: -1px;
-}
-.lobby-player.lobby-player-bottom.d-flex.align-items-center.lobby-player-active {
-  top: inherit;
-}
-.btnsetting i {font-size: 16px;}
-.btnsetting {width: 30px;height: 30px;}
-.lobby-container {max-width: 520px !important;}
 
-}
-
-@media screen and (max-width: 767px) {
-  .lobby-container {
-  max-width: 100%;
-  padding: 0 12px;
-}
-.lobbydiv img, .cards-patti img {
-  width: 25px;
-}
-.cardsalldiv {
-  gap:20px;
+@media (min-width: 360px) {
+  .realtimeresult-modal .modal-dialog {
+  width: 340px;
+  margin-right: 10px;
+  margin-left: auto;
 }
 }
 
-/* ---------------------Lobby Css End!--------------------- */
+/* -------------Poker Table End!--------------- */
