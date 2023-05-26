@@ -441,6 +441,14 @@ padding-bottom: 2px;
   border-radius: 75px;
   border: 2px solid #235014;
 }
+.settingpopup1-open {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: translate(0) !important;
+}
+.settingpopup.settingpopup1 ul li {
+  text-align: left;
+}
 
 
 
@@ -482,6 +490,18 @@ padding-bottom: 2px;
 }
 .btn.pokertable-topbtn.me-3.lobbytable-menu {
   margin-right: 5px !important;
+}
+
+.pokertablemenu-des.settingpopup1 {
+  position: absolute !important;
+  left: inherit !important;
+  right: 5px !important;
+  height: auto !important;
+  background: #2a2d2b !important;
+  border: 1.9px solid #4ab74d !important;
+  border-radius: 8px 8px 2px 2px !important;
+  top: 8px !important;
+  padding-top: 0 !important;
 }
 
 }
@@ -1371,9 +1391,6 @@ font-size: 30px;
   color: #335334;
 }
 .portrait-rang-btndiv {display: none !important;}
-.pokertable-topbtn.settingspopup {
-  padding: 7px;
-}
 
 
 
@@ -1920,7 +1937,7 @@ font-size: 30px;
   width: 35px;
 }
 #handhistoryModal .row .d-flex img.w-100, #handModal .row .d-flex img.w-100 {
-    width: 32px !important;
+  width: 32px !important;
 }
 
 

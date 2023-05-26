@@ -33,9 +33,29 @@
 			<i class="fa-solid fa-users-slash"></i>
 			<span class="privateBtn">Private</span>
 			</button>
-      <button class="btn userslash-btn position-relative setting-btn">
+      <button class="btn userslash-btn position-relative setting-btn setting-btn1">
       <i class="fa-solid fa-gear"></i>
       </button>
+
+      <div class="pokertablemenu-des settingpopup settingpopup1 position-absolute top-0">
+        <button class="btn text-uppercase position-relative">Settings <i class="fa-solid fa-xmark"></i></button>
+        <ul class="pokerMenu-list">
+          <li class="d-block pokernav-item text-uppercase switchToggle">
+            <i class="fa-solid fa-music"></i> Sound <input type="checkbox" id="switch" class="" name="">
+            <label for="switch" class="value_add"></label>
+          </li>
+          <li class="d-block pokernav-item text-uppercase switchToggle">
+            <i class="fa-solid fa-mobile"></i> Vibration <input type="checkbox" id="muteChat" class="" name="">
+            <label for="muteChat" class="value_add"></label>
+          </li>
+          <li class="d-block pokernav-item text-uppercase switchToggle">
+            <i class="fa-brands fa-rocketchat"></i> Chat <input type="checkbox" id="autoMuck" class="" name="">
+            <label for="autoMuck" class="value_add"></label>
+          </li>
+        </ul>
+      </div>
+
+
 		</div>
 	</div>
 </div>
@@ -561,6 +581,16 @@
   });
 });
 
+</script>
+
+<script>
+  $(".setting-btn1").click(function(){
+  $(".settingpopup1").toggleClass("settingpopup1-open");
+});
+$(".settingpopup1 button i").click(function(){
+  $(".settingpopup1").removeClass("settingpopup1-open");
+});
+  
 </script>
 
 </body>
